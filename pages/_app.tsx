@@ -1,7 +1,31 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import { createGlobalStyle } from "styled-components";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const GlobalStyle = createGlobalStyle`
+html,
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif;
 }
-export default MyApp
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+`;
+
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <>
+    <GlobalStyle />
+    <Component {...pageProps} />
+  </>
+);
+
+export default MyApp;
