@@ -8,6 +8,14 @@ const SectionTitleContainer = styled.h1`
   margin: 0;
   color: white;
   text-align: center;
+
+  @media screen and (max-width: 900px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 2rem;
+  }
 `;
 
 const SectionTitle: FC = ({ children }) => (

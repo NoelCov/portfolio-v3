@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@types/styled-components-react-native": "^5.1.1",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "next": "11.1.2",

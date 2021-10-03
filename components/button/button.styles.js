@@ -11,4 +11,13 @@ export const ButtonContainer = styled.div`
   :hover {
     background-color: #ba7800;
   }
+
+  @media screen and (max-width: 900px) {
+    font-size: 1rem;
+    padding: 15px 50px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 0.8rem;
+  }
 `;

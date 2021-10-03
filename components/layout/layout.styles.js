@@ -9,4 +9,13 @@ export const LayoutContainer = styled.div`
   align-items: center;
   padding: 0 10vw;
   justify-content: center;
+
+  @media screen and (max-width: 900px) {
+    padding: 0 8vw;
+  }
+
+  @media screen and (max-width: 550px) {
+    padding: 0 5vw;
+    min-height: 0;
+  }
 `;

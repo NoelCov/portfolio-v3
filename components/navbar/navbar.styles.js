@@ -41,6 +41,7 @@ export const NavbarLinksContainer = styled.div`
     top: 0;
     padding-top: 15vh;
     gap: 80px;
+    z-index: 2;
     transition: right 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
@@ -83,7 +84,7 @@ export const NavbarMobileMenu = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 3;
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
   :hover {

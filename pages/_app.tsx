@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { createGlobalStyle } from "styled-components";
 
 import Navbar from "../components/navbar/navbar.component";
+import Footer from "../components/footer/footer.component";
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -30,6 +31,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <GlobalStyle />
     <Navbar />
     <Component {...pageProps} />
+    <Footer />
   </>
 );
 
