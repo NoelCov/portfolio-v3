@@ -1,5 +1,8 @@
 import type { AppProps } from "next/app";
+
 import { createGlobalStyle } from "styled-components";
+
+import Navbar from "../components/navbar/navbar.component";
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -9,6 +12,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
+  color: white;
 }
 
 a {
@@ -24,6 +28,7 @@ a {
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <GlobalStyle />
+    <Navbar />
     <Component {...pageProps} />
   </>
 );
