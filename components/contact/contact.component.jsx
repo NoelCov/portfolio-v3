@@ -47,26 +47,26 @@ const ContactPage = () => {
   };
 
   return (
-    <>
+    <ContactContainer>
       {successMessage ? (
-        <ContactContainer>
-          <SectionTitle>{"Message sent succesfully! :)"}</SectionTitle>
+        <>
+          <SectionTitle>{"Message sent succesfully! ☺"}</SectionTitle>
           <ImageContainerComponent
             alt="success message"
             src="/images/thankyou-message.jpg"
             width={4829}
             height={3620}
           />
-        </ContactContainer>
+        </>
       ) : (
-        <ContactContainer>
+        <>
           <SectionTitle>
             CONTACT<span> &nbsp;</span>ME
           </SectionTitle>
           {errorMessage ? (
             <ErrorMessage>Message was not sent. Try again please</ErrorMessage>
           ) : null}
-          <ContactFormContainer onSubmit={() => sendEmail}>
+          <ContactFormContainer onSubmit={sendEmail}>
             <FormNamesInputContainer>
               <Inputcomponent id="firstName" type="text" text="First Name" />
               <Inputcomponent id="lastName" type="text" text="Last Name" />
@@ -80,9 +80,9 @@ const ContactPage = () => {
               <Button>SEND MESSAGE</Button>
             </ButtonContainer>
           </ContactFormContainer>
-        </ContactContainer>
+        </>
       )}
-    </>
+    </ContactContainer>
   );
 };
 

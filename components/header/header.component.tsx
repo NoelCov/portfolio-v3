@@ -17,7 +17,7 @@ const HeaderComponent = () => (
       src="/images/noelcodeshero.jpg"
       width={6000}
       height={4000}
-      alt="me"
+      alt="Noel Covarrubias aka Noel Codes"
     />
     <HeaderTextContainer>
       Hey, I’m Noel, a self-taught software developer. I’m currently open to

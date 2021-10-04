@@ -14,9 +14,21 @@ export const ContactFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 45%;
   gap: 40px;
   padding: 5vh 0;
+  margin: 0 auto;
+
+  @media screen and (max-width: 900px) {
+    width: 70%;
+    margin: 0 auto;
+    gap: 60px;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 80%;
+    padding: 2vh 0;
+  }
 `;
 
 const formsStyles = css`
@@ -24,6 +36,10 @@ const formsStyles = css`
   width: 100%;
   gap: 60px;
   align-items: center;
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+  }
 `;
 
 export const FormNamesInputContainer = styled.div`
@@ -46,6 +62,10 @@ export const ButtonContainer = styled.button`
   border: none;
   font-family: "Nunito Sans", sans-serif;
   background-color: inherit;
+
+  @media screen and (max-width: 550px) {
+    max-width: 200px;
+  }
 `;
 
 export const ErrorMessage = styled.p`
