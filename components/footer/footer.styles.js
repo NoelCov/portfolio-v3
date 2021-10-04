@@ -2,11 +2,11 @@ import styled, { css } from "styled-components";
 
 const styles = css`
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   :hover {
     color: #f09b00;
   }
-`
+`;
 
 export const FooterContainer = styled.div`
   width: 100vw;
@@ -25,7 +25,7 @@ export const FooterContainer = styled.div`
     padding: 50px 0;
     gap: 50px;
   }
-`
+`;
 
 export const FooterIconsContainer = styled.div`
   display: flex;
@@ -34,29 +34,33 @@ export const FooterIconsContainer = styled.div`
   @media screen and (max-width: 900px) {
     gap: 30px;
   }
-`
+`;
 
 export const FooterIconContainer = styled.a`
-  font-size: 1.8rem;
-  ${styles}
-
-  @media screen and (max-width: 900px) {
-    font-size: 1.6rem;
-  }
-`
+  font-size: 1.5rem;
+  ${styles};
+`;
 
 export const FooterLinksContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  text-align: center;
 
   @media screen and (max-width: 900px) {
     gap: 15px;
+    display: flex;
   }
-`
+
+  @media screen and (max-width: 550px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+`;
 
 export const FooterLinkContainer = styled.a`
-  ${styles}
-`
+  ${styles};
+`;

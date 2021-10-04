@@ -2,17 +2,17 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import Layout from "../components/layout/layout.component";
-import Header from "../components/header/header.component";
+import Contact from "../components/contact/contact.component";
 
-const Home: NextPage = () => (
+const ContactPage: NextPage = () => (
   <>
     <Head>
-      <title>Noel Codes | Home Page</title>
+      <title>Noel Codes | Contact</title>
     </Head>
     <Layout>
-      <Header />
+      <Contact />
     </Layout>
   </>
 );
 
-export default Home;
+export default ContactPage;

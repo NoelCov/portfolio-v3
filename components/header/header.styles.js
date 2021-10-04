@@ -18,18 +18,6 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-export const HeaderImageContainer = styled.div`
-  max-width: 60%;
-
-  @media screen and (max-width: 900px) {
-    max-width: 80%;
-  }
-
-  @media screen and (max-width: 550px) {
-    max-width: 95%;
-  }
-`;
-
 export const HeaderTextContainer = styled.div`
   max-width: 45%;
   text-align: center;

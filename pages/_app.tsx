@@ -24,6 +24,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+input {
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+
+  ::placeholder {
+    color: white;
+    opacity: 1;
+  }
+}
 `;
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
