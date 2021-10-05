@@ -6,10 +6,12 @@ import Image from "next/image";
 import {
   NavbarContainer,
   NavbarLinksContainer,
-  NavbarSVGContainer,
   NavbarLink,
   NavbarMobileMenu,
   NavbarMobileLines,
+  NavbarImageContainer,
+  IconContainer,
+  IconContainerText
 } from "./navbar.styles";
 
 const NavbarComponent = () => {
@@ -17,20 +19,23 @@ const NavbarComponent = () => {
 
   const onClick = () => {
     toggleHidden(!hidden);
-  }
+  };
 
   return (
     <NavbarContainer>
       <Link href="/">
         <a rel="noopener noreferrer">
-          <NavbarSVGContainer>
-            <Image
-              src="/images/noelcodesicon.svg"
-              width="131"
-              height="86"
-              alt="navbar icon"
-            />
-          </NavbarSVGContainer>
+        <IconContainer>
+          <NavbarImageContainer>
+          <Image
+            src="/images/horns.svg"
+            width="381"
+            height="166"
+            alt="navbar icon"
+          />
+          </NavbarImageContainer>
+          <IconContainerText>NOEL COVARRUBIAS</IconContainerText>
+          </IconContainer>
         </a>
       </Link>
       <NavbarMobileMenu onClick={onClick}>
@@ -45,7 +50,7 @@ const NavbarComponent = () => {
         <Link href="/contact" passHref>
           <NavbarLink onClick={onClick}>CONTACT</NavbarLink>
         </Link>
-        <Link href="/" passHref>
+        <Link href="/blog" passHref>
           <NavbarLink onClick={onClick}>BLOG</NavbarLink>
         </Link>
       </NavbarLinksContainer>

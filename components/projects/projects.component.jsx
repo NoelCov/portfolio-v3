@@ -12,6 +12,10 @@ const ProjectsContainer = styled.div`
   flex-direction: column;
   gap: 60px;
   padding: 8vh 0;
+
+  @media screen and (max-width: 900px) {
+    padding: 8vh 0 10vh;
+  }
 `;
 
 const Projects = () => (

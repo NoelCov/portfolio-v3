@@ -5,7 +5,7 @@ export const NavbarContainer = styled.nav`
   max-width: 100vw;
   background-color: #161616;
   color: white;
-  padding: 30px 50px;
+  padding: 25px 60px 25px 30px;
   align-items: center;
   justify-content: center;
 
@@ -15,7 +15,7 @@ export const NavbarContainer = styled.nav`
 
   @media screen and (max-width: 550px) {
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 15px 20px;
   }
 `;
 
@@ -36,7 +36,7 @@ export const NavbarLinksContainer = styled.div`
     align-items: center;
     width: 300px;
     position: fixed;
-    right: ${props => props.hidden ? "-350px" : 0};
+    right: ${(props) => (props.hidden ? "-350px" : 0)};
     top: 0;
     padding-top: 15vh;
     gap: 80px;
@@ -55,21 +55,6 @@ export const NavbarLink = styled.span`
 
   @media screen and (max-width: 900px) {
     font-size: 0.9rem;
-  }
-`;
-
-export const NavbarSVGContainer = styled.div`
-  width: 60px;
-  height: 50px;
-
-  @media screen and (max-width: 900px) {
-    width: 50px;
-    height: 40px;
-  }
-
-  @media screen and (max-width: 550px) {
-    width: 45px;
-    height: 30px;
   }
 `;
 
@@ -101,3 +86,42 @@ export const NavbarMobileLines = styled.span`
   background-color: white;
   border-radius: 5px;
 `;
+
+export const NavbarImageContainer = styled.div`
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 900px) {
+    width: 80px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 60px;
+  }
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  @media screen and (max-width: 900px) {
+    gap: 10px;
+  }
+`
+
+export const IconContainerText = styled.span`
+  font-size: 1.4rem;
+  font-family: Poppins;
+
+  @media screen and (max-width: 900px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 1rem;
+  }
+`
