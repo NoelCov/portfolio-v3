@@ -18,7 +18,7 @@ const ImageContainer = styled.div`
 
 const ImageContainerComponent = ({ src, height, width, alt }) => (
   <ImageContainer>
-    <Image src={src} height={height} alt={alt} width={width} loading="eager" />
+    <Image src={src} height={height} alt={alt} width={width} loading="eager" priority={true} />
   </ImageContainer>
 );
 

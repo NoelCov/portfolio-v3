@@ -12,7 +12,7 @@ export const FooterContainer = styled.div`
   width: 100vw;
   background-color: #161616;
   display: flex;
-  padding: 20px 50px;
+  padding: 30px 50px;
   align-items: center;
   justify-content: space-between;
 
@@ -22,7 +22,7 @@ export const FooterContainer = styled.div`
 
   @media screen and (max-width: 550px) {
     flex-direction: column;
-    padding: 50px 0;
+    padding: 25px 0;
     gap: 50px;
   }
 `;
@@ -42,22 +42,19 @@ export const FooterIconContainer = styled.a`
 `;
 
 export const FooterLinksContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  flex-direction: column;
+  display: flex;
   gap: 20px;
   text-align: center;
 
   @media screen and (max-width: 900px) {
     gap: 15px;
     display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media screen and (max-width: 550px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    gap: 10px;
+    width: 50%;
   }
 `;
 
