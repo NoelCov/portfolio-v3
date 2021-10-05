@@ -39,7 +39,7 @@ const NavbarComponent = () => {
         <NavbarMobileLines />
       </NavbarMobileMenu>
       <NavbarLinksContainer hidden={hidden}>
-        <Link href="/" passHref>
+        <Link href="/projects" passHref>
           <NavbarLink onClick={onClick}>PROJECTS</NavbarLink>
         </Link>
         <Link href="/contact" passHref>

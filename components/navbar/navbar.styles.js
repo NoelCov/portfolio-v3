@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
   display: flex;
-  width: 100vw;
+  max-width: 100vw;
   background-color: #161616;
   color: white;
   padding: 30px 50px;
@@ -30,13 +30,12 @@ export const NavbarLinksContainer = styled.div`
   }
 
   @media screen and (max-width: 550px) {
-    display: flex;
     flex-direction: column;
     height: 100vh;
     background-color: #1e1e1e;
     align-items: center;
     width: 300px;
-    position: absolute;
+    position: fixed;
     right: ${props => props.hidden ? "-350px" : 0};
     top: 0;
     padding-top: 15vh;
