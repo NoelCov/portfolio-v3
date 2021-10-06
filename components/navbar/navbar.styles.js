@@ -97,7 +97,7 @@ export const NavbarImageContainer = styled.div`
     width: 80px;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 550px) {
     width: 60px;
   }
 `;
