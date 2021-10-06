@@ -24,7 +24,7 @@ const NavbarComponent = () => {
   return (
     <NavbarContainer>
       <Link href="/">
-        <a rel="noopener noreferrer">
+        <a>
         <IconContainer>
           <NavbarImageContainer>
           <Image
@@ -34,7 +34,7 @@ const NavbarComponent = () => {
             alt="navbar icon"
           />
           </NavbarImageContainer>
-          <IconContainerText>NOEL COVARRUBIAS</IconContainerText>
+          <IconContainerText>NOEL CODES</IconContainerText>
           </IconContainer>
         </a>
       </Link>

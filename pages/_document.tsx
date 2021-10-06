@@ -10,6 +10,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Nunito+Sans&family=Poppins&display=swap"
             rel="stylesheet"
           />
+          <html lang="en-us" />
         </Head>
         <body>
           <Main />
