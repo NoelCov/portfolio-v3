@@ -19,23 +19,23 @@ const ProjectsContainer = styled.div`
 `;
 
 const Projects = () => (
-    <ProjectsContainer>
+  <ProjectsContainer>
     <SectionTitle>PROJECTS</SectionTitle>
-      {projectsArray.map((project, key) => {
-        return (
-          <ProjectContainerComponent
-            key={key}
-            imageSrc={project.imageSrc}
-            imageWidth={project.imageWidth}
-            imageHeight={project.imageHeight}
-            projectContent={project.projectContent}
-            projectTitle={project.projectTitle}
-            websiteURL={project.websiteURL}
-            toolsUsed={project.toolsUsed}
-          />
-        );
-      })}
-    </ProjectsContainer>
+    {projectsArray.map((project, key) => {
+      return (
+        <ProjectContainerComponent
+          key={key}
+          imageSrc={project.imageSrc}
+          imageWidth={project.imageWidth}
+          imageHeight={project.imageHeight}
+          projectContent={project.projectContent}
+          projectTitle={project.projectTitle}
+          websiteURL={project.websiteURL}
+          toolsUsed={project.toolsUsed}
+        />
+      );
+    })}
+  </ProjectsContainer>
 );
 
 export default Projects;

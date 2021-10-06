@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import onClickOutside from "react-onclickoutside";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,9 +19,9 @@ import {
 const NavbarComponent = () => {
   const [hidden, toggleHidden] = useState(true);
 
-  const onClick = () => {
-    toggleHidden(!hidden);
-  };
+  const onClick = () => toggleHidden(!hidden);
+
+  NavbarComponent.handleClickOutside = () => toggleHidden(true);
 
   return (
     <NavbarContainer>
@@ -58,4 +60,8 @@ const NavbarComponent = () => {
   );
 };
 
-export default NavbarComponent;
+const clickOutsideConfig = {
+  handleClickOutside: () => NavbarComponent.handleClickOutside
+}
+
+export default onClickOutside(NavbarComponent, clickOutsideConfig);
