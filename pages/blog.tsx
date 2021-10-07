@@ -18,8 +18,7 @@ const BlogPage = () => {
         />
         <meta
           name="description"
-          content="I've been around computers my whole life but never did any programming with them.
-      Once I did, everything changed for me. I want to solve problems using my skills as a programmer."
+          content="I've been around computers my whole life but never did any programming with them. Once I did, everything changed for me. I want to solve problems using my skills as a programmer."
         />
         <meta
           name="og:description"

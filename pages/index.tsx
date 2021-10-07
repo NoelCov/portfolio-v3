@@ -33,7 +33,6 @@ const Home: NextPage = () => (
       <meta name="twitter:image" content={LandingImage.src} />
       <html lang="en-us" />
     </Head>
-
     <Layout>
       <Header />
     </Layout>
