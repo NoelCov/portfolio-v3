@@ -11,6 +11,10 @@ const ContactPage: NextPage = () => (
     <Head>
       <title>Noel Codes | Contact</title>
       <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta
         name="description"
         content="I've been around computers my whole life but never did any programming with them.
       Once I did, everything changed for me. I want to solve problems using my skills as a programmer."
