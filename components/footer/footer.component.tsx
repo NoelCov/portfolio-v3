@@ -56,9 +56,6 @@ const FooterComponent = () => {
         <Link href="/contact" passHref>
           <FooterLinkContainer>Contact</FooterLinkContainer>
         </Link>
-        <Link href="/blog" passHref>
-          <FooterLinkContainer>Blog</FooterLinkContainer>
-        </Link>
       </FooterLinksContainer>
     </FooterContainer>
   );

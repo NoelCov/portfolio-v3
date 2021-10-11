@@ -3,26 +3,11 @@ import styled from "styled-components";
 export const ProjectContainer = styled.div`
   width: 100%;
   display: flex;
-  height: 500px;
   align-items: center;
   gap: 25px;
 
   :nth-of-type(odd) {
     flex-flow: row-reverse;
-  }
-
-  a {
-    color: white;
-    font-size: 0.9rem;
-    transition: 300ms;
-
-    &: hover {
-      color: teal;
-    }
-
-    @media screen and (max-width: 550px) {
-      font-size: 0.8rem;
-    }
   }
 
   @media screen and (max-width: 900px) {
@@ -33,7 +18,7 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectImageContainer = styled.div`
-  width: 60%;
+  width: 65%;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.9;
 
@@ -49,18 +34,18 @@ export const ProjectImageContainer = styled.div`
 
 export const ProjectContentContainer = styled.div`
   width: 45%;
-  min-height: 70%;
+  min-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: #171717;
   align-items: center;
-  padding: 25px;
   text-align: center;
 
   @media screen and (max-width: 900px) {
     width: 95%;
-    height: auto;
+    min-height: 280px;
+    padding: 20px;
     gap: 40px;
   }
 
@@ -73,11 +58,7 @@ export const ProjectContentContainer = styled.div`
 export const ProjectTitle = styled.h3`
   margin: 0;
   color: teal;
-  font-size: 1.8rem;
-
-  @media screen and (max-width: 900px) {
-    font-size: 1.5rem;
-  }
+  font-size: 1.3rem;
 
   @media screen and (max-width: 550px) {
     font-size: 1.2rem;
@@ -85,12 +66,8 @@ export const ProjectTitle = styled.h3`
 `;
 export const ProjectText = styled.p`
   margin: 0;
-  padding: 0 60px;
-  font-size: 1.1rem;
-
-  @media screen and (max-width: 900px) {
-    font-size: 1rem;
-  }
+  padding: 0 30px;
+  font-size: 1rem;
 
   @media screen and (max-width: 550px) {
     padding: 0;
@@ -120,3 +97,25 @@ export const ProjectTool = styled.p`
   color: teal;
   font-size: 0.9rem;
 `;
+
+export const ViewProjectLink = styled.a`
+  font-size: 0.8rem;
+  background-color: orange;
+  color: black;
+  padding: 15px 50px;
+  transition: 300ms;
+
+  &:hover {
+    background-color: #ba7800;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 15px 40px;
+  }
+
+  @media screen and (max-width: 550px) {
+    padding: 10px 30px;
+  }
+`
+
+

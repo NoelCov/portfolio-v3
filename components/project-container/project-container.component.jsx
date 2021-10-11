@@ -10,7 +10,10 @@ import {
   ProjectText,
   ProjectToolsContainer,
   ProjectTool,
+  ViewProjectLink
 } from "./project-container.styles";
+
+import ButtonComponent from "../button/button.component";
 
 const ProjectContainerComponent = ({
   imageSrc,
@@ -40,9 +43,9 @@ const ProjectContainerComponent = ({
           <ProjectTool key={key}>{tool}</ProjectTool>
         ))}
       </ProjectToolsContainer>
-      <a href={websiteURL} target="_blank" rel="noopener noreferrer">
+      <ViewProjectLink href={websiteURL} target="_blank" rel="noopener noreferrer">
         VIEW PROJECT
-      </a>
+      </ViewProjectLink>
     </ProjectContentContainer>
   </ProjectContainer>
 );
