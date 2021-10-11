@@ -7,7 +7,7 @@ export const NavbarContainer = styled.nav`
   color: white;
   padding: 25px 60px 25px 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   @media screen and (max-width: 900px) {
     padding: 20px 30px;
@@ -20,7 +20,6 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const NavbarLinksContainer = styled.div`
-  margin: 0 0 0 auto;
   list-style: none;
   display: flex;
   gap: 40px;
@@ -102,7 +101,7 @@ export const NavbarImageContainer = styled.div`
   }
 `;
 
-export const IconContainer = styled.div`
+export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,9 +110,9 @@ export const IconContainer = styled.div`
   @media screen and (max-width: 900px) {
     gap: 10px;
   }
-`
+`;
 
-export const IconContainerText = styled.span`
+export const LogoContainerText = styled.span`
   font-size: 1.4rem;
   font-family: Poppins;
 
@@ -124,4 +123,4 @@ export const IconContainerText = styled.span`
   @media screen and (max-width: 550px) {
     font-size: 1rem;
   }
-`
+`;

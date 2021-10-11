@@ -9,7 +9,21 @@ export const ProjectContainer = styled.div`
 
   :nth-of-type(odd) {
     flex-flow: row-reverse;
-  };
+  }
+
+  a {
+    color: white;
+    font-size: 0.9rem;
+    transition: 300ms;
+
+    &: hover {
+      color: teal;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 0.8rem;
+    }
+  }
 
   @media screen and (max-width: 900px) {
     display: flex;
@@ -51,7 +65,7 @@ export const ProjectContentContainer = styled.div`
   }
 
   @media screen and (max-width: 550px) {
-    gap: 20px;
+    gap: 30px;
     width: 100%;
   }
 `;
@@ -90,7 +104,7 @@ export const ProjectToolsContainer = styled.div`
   gap: 15px;
 
   @media screen and (max-width: 900px) {
-   gap: 30px; 
+    gap: 30px;
   }
 
   @media screen and (max-width: 550px) {

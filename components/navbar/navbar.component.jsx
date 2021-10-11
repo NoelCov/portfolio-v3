@@ -12,8 +12,8 @@ import {
   NavbarMobileMenu,
   NavbarMobileLines,
   NavbarImageContainer,
-  IconContainer,
-  IconContainerText
+  LogoContainer,
+  LogoContainerText,
 } from "./navbar.styles";
 
 const NavbarComponent = () => {
@@ -27,17 +27,17 @@ const NavbarComponent = () => {
     <NavbarContainer>
       <Link href="/">
         <a>
-        <IconContainer>
-          <NavbarImageContainer>
-          <Image
-            src="/images/horns.svg"
-            width="381"
-            height="166"
-            alt="navbar icon"
-          />
-          </NavbarImageContainer>
-          <IconContainerText>NOEL CODES</IconContainerText>
-          </IconContainer>
+          <LogoContainer>
+            <NavbarImageContainer>
+              <Image
+                src="/images/horns.svg"
+                width="381"
+                height="166"
+                alt="navbar icon"
+              />
+            </NavbarImageContainer>
+            <LogoContainerText>NOEL CODES</LogoContainerText>
+          </LogoContainer>
         </a>
       </Link>
       <NavbarMobileMenu onClick={onClick}>
@@ -52,16 +52,13 @@ const NavbarComponent = () => {
         <Link href="/contact" passHref>
           <NavbarLink onClick={onClick}>CONTACT</NavbarLink>
         </Link>
-        <Link href="/blog" passHref>
-          <NavbarLink onClick={onClick}>BLOG</NavbarLink>
-        </Link>
       </NavbarLinksContainer>
     </NavbarContainer>
   );
 };
 
 const clickOutsideConfig = {
-  handleClickOutside: () => NavbarComponent.handleClickOutside
-}
+  handleClickOutside: () => NavbarComponent.handleClickOutside,
+};
 
 export default onClickOutside(NavbarComponent, clickOutsideConfig);

@@ -40,6 +40,9 @@ const ProjectContainerComponent = ({
           <ProjectTool key={key}>{tool}</ProjectTool>
         ))}
       </ProjectToolsContainer>
+      <a href={websiteURL} target="_blank" rel="noopener noreferrer">
+        VIEW PROJECT
+      </a>
     </ProjectContentContainer>
   </ProjectContainer>
 );

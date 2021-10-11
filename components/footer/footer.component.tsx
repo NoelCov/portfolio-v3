@@ -2,45 +2,53 @@ import React from "react";
 
 import Link from "next/link";
 
+import {
+  FooterContainer,
+  FooterLinksContainer,
+  FooterLinkContainer,
+  FooterSocialsContainer,
+  FooterSocialContainer,
+} from "./footer.styles";
+
 import { AiOutlineTwitter } from "@react-icons/all-files/ai/AiOutlineTwitter";
 import { FaTwitch } from "@react-icons/all-files/fa/FaTwitch";
 import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube";
-
-import {
-  FooterContainer,
-  FooterIconsContainer,
-  FooterLinksContainer,
-  FooterLinkContainer,
-  FooterIconContainer,
-} from "./footer.styles";
+import { AiOutlineLinkedin } from "@react-icons/all-files/ai/AiOutlineLinkedin";
 
 const FooterComponent = () => {
   return (
     <FooterContainer>
       <span>Noel Codes Copyright: &copy; 2021</span>
-      <FooterIconsContainer>
-        <FooterIconContainer
+      <FooterSocialsContainer>
+        <FooterSocialContainer
           href="https://twitter.com/noel_codes"
           rel="noreferrer noopener"
           target="_blank"
         >
           <AiOutlineTwitter />
-        </FooterIconContainer>
-        <FooterIconContainer
+        </FooterSocialContainer>
+        <FooterSocialContainer
           href="https://www.twitch.tv/no3lcodes"
           rel="noreferrer noopener"
           target="_blank"
         >
           <FaTwitch />
-        </FooterIconContainer>
-        <FooterIconContainer
+        </FooterSocialContainer>
+        <FooterSocialContainer
           href="https://www.youtube.com/channel/UCuaVuPAgcEWT_VRRfMu_bbQ"
           rel="noreferrer noopener"
           target="_blank"
         >
           <AiFillYoutube />
-        </FooterIconContainer>
-      </FooterIconsContainer>
+        </FooterSocialContainer>
+        <FooterSocialContainer
+          href="https://www.linkedin.com/in/noelcodes/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <AiOutlineLinkedin />
+        </FooterSocialContainer>
+      </FooterSocialsContainer>
       <FooterLinksContainer>
         <Link href="/projects" passHref>
           <FooterLinkContainer>Projects</FooterLinkContainer>
