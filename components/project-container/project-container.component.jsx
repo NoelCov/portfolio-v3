@@ -13,8 +13,6 @@ import {
   ViewProjectLink
 } from "./project-container.styles";
 
-import ButtonComponent from "../button/button.component";
-
 const ProjectContainerComponent = ({
   imageSrc,
   imageWidth,

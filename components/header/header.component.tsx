@@ -22,7 +22,7 @@ const HeaderComponent = () => (
     <HeaderTextContainer>
       Hey, I’m Noel, a self-taught software developer. I’m currently open to
       work. Besides programming, which is what I do almost all day I also enjoy
-      to read, work out, play video games and be with my girlfriend.
+      to read, work out, play video games and to learn about other topics.
     </HeaderTextContainer>
     <Link href="/contact">
       <a>
