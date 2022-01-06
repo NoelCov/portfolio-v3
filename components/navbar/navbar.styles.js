@@ -46,6 +46,7 @@ export const NavbarLinksContainer = styled.div`
 
 export const NavbarLink = styled.span`
   cursor: pointer;
+  font-size: 0.9rem;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   :hover {
@@ -87,7 +88,7 @@ export const NavbarMobileLines = styled.span`
 `;
 
 export const NavbarImageContainer = styled.div`
-  width: 120px;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +106,6 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
 
   @media screen and (max-width: 900px) {
     gap: 10px;
@@ -113,7 +113,7 @@ export const LogoContainer = styled.div`
 `;
 
 export const LogoContainerText = styled.span`
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: Poppins;
 
   @media screen and (max-width: 900px) {

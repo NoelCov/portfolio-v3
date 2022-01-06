@@ -11,17 +11,16 @@ import ImageContainerComponent from "../image-container/image-container.componen
 const HeaderComponent = () => (
   <HeaderContainer>
     <SectionTitle>
-      NOEL<span> &nbsp;</span>CODES
+      NOEL<span> &nbsp;</span>COVARRUBIAS
     </SectionTitle>
     <ImageContainerComponent
       src="/images/noelcodeshero.jpg"
-      width={6000}
-      height={4000}
+      width={5000}
+      height={3000}
       alt="Noel Covarrubias aka Noel Codes"
     />
     <HeaderTextContainer>
-      Hey, I’m Noel, a self-taught software developer. I’m currently open to
-      work. Besides programming, which is what I do almost all day I also enjoy
+      Hey, I’m Noel, I'm a self-taught software engineer. Besides programming, which is what I do almost all day I also enjoy
       to read, work out, play video games and to learn about other topics.
     </HeaderTextContainer>
     <Link href="/contact">

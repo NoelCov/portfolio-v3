@@ -10,7 +10,7 @@ import SectionTitle from "../utils/section-title.component";
 const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 150px;
   padding: 8vh 0;
 
   @media screen and (max-width: 900px) {

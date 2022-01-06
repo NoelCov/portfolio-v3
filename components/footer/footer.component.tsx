@@ -18,7 +18,7 @@ import { AiOutlineLinkedin } from "@react-icons/all-files/ai/AiOutlineLinkedin";
 const FooterComponent = () => {
   return (
     <FooterContainer>
-      <span>Noel Codes Copyright: &copy; 2021</span>
+      <span>Noel Codes Copyright: &copy; 2022</span>
       <FooterSocialsContainer>
         <FooterSocialContainer
           href="https://twitter.com/noel_codes"

@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 8vh 0;
-  gap: 40px;
+  gap: 60px;
 
   @media screen and (max-width: 550px) {
     padding: 6vh 0;
@@ -16,7 +16,7 @@ export const HeaderContainer = styled.div`
 export const HeaderTextContainer = styled.div`
   max-width: 45%;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 
   @media screen and (max-width: 900px) {

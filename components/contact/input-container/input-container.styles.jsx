@@ -5,18 +5,14 @@ export const LabelInputContainer = styled.div`
   flex-direction: column;
   gap: 30px;
   width: 100%;
-  font-size: 1.2rem;
-
-  @media screen and (max-width: 550px) {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 `;
 
 const inputStyles = css`
   background-color: #121212;
   border: none;
   placeholder-color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-bottom: 1px solid white;
   transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;

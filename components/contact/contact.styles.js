@@ -7,7 +7,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   padding: 8vh 0;
   gap: 60px;
-  width: 100%;
+  width: 90%;
 `;
 
 export const ContactFormContainer = styled.form`

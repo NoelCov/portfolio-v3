@@ -30,9 +30,9 @@ const NavbarComponent = () => {
           <LogoContainer>
             <NavbarImageContainer>
               <Image
-                src="/images/horns.svg"
-                width="381"
-                height="166"
+                src="/images/gengarsvg.svg"
+                width="380"
+                height="350"
                 alt="navbar icon"
               />
             </NavbarImageContainer>
