@@ -20,8 +20,8 @@ const HeaderComponent = () => (
       alt="Noel Covarrubias aka Noel Codes"
     />
     <HeaderTextContainer>
-      {```Hey, I'm Noel, I'm a self-taught software engineer. Besides programming, which is what I do almost all day I also enjoy
-      to read, work out, play video games and to learn about other topics.```}
+      Hey, I'm Noel, I'm a self-taught software engineer. Besides programming, which is what I do almost all day I also enjoy
+      to read, work out, play video games and to learn about other topics.
     </HeaderTextContainer>
     <Link href="/contact">
       <a>
