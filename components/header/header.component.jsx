@@ -14,9 +14,10 @@ const HeaderComponent = () => (
       NOEL<span> &nbsp;</span>COVARRUBIAS
     </SectionTitle>
     <ImageContainerComponent
-      src="/images/noelcodeshero.jpg"
-      width={5000}
-      height={3000}
+      src="/images/linkedin.jpg"
+      width={450}
+      height={500}
+      priority="true"
       alt="Noel Covarrubias aka Noel Codes"
     />
     <HeaderTextContainer>
