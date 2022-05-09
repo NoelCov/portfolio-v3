@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
-  background-color: #f09b00;
-  color: black;
-  padding: 15px 40px;
-  border-radius: 2.5px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #2b79a2;
+  color: #bcbdd0;
+  padding: 20px 55px;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   :hover {
-    background-color: #ba7800;
+    border-color: #bcbdd0;
   }
 
   @media screen and (max-width: 550px) {

@@ -16,6 +16,11 @@ const ProjectsContainer = styled.div`
   @media screen and (max-width: 900px) {
     padding: 8vh 0 10vh;
   }
+
+  @media screen and (max-width: 450px) {
+    padding: 0;
+    gap: 50px;
+  }
 `;
 
 const Projects = () => (

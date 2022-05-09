@@ -66,7 +66,7 @@ const ContactPage = () => {
           {errorMessage ? (
             <ErrorMessage>Message was not sent. Try again please</ErrorMessage>
           ) : null}
-          <ContactFormContainer onSubmit={sendEmail}>
+          <ContactFormContainer onSubmit={sendEmail} autoComplete="off">
             <FormNamesInputContainer>
               <Inputcomponent id="firstName" type="text" text="First Name" />
               <Inputcomponent id="lastName" type="text" text="Last Name" />

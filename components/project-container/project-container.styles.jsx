@@ -4,7 +4,7 @@ export const ProjectContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
 
   :nth-of-type(odd) {
     flex-flow: row-reverse;
@@ -18,7 +18,7 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectImageContainer = styled.div`
-  width: 65%;
+  width: 60%;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.9;
 
@@ -38,9 +38,10 @@ export const ProjectContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #171717;
   align-items: center;
   text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 
   @media screen and (max-width: 900px) {
     width: 95%;
@@ -50,6 +51,7 @@ export const ProjectContentContainer = styled.div`
   }
 
   @media screen and (max-width: 550px) {
+    border-top: none;
     gap: 30px;
     width: 100%;
   }
@@ -58,7 +60,7 @@ export const ProjectContentContainer = styled.div`
 export const ProjectTitle = styled.h3`
   margin: 0;
   color: teal;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 
   @media screen and (max-width: 550px) {
     font-size: 1.2rem;
@@ -67,7 +69,7 @@ export const ProjectTitle = styled.h3`
 export const ProjectText = styled.p`
   margin: 0;
   padding: 0 30px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   @media screen and (max-width: 550px) {
     padding: 0;
@@ -95,7 +97,7 @@ export const ProjectToolsContainer = styled.div`
 export const ProjectTool = styled.p`
   margin: 0;
   color: teal;
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;
 
 export const ViewProjectLink = styled.a`

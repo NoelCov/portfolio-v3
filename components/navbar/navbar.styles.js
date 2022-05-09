@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const NavbarContainer = styled.nav`
   display: flex;
   max-width: 100vw;
-  background-color: #161616;
-  color: white;
+  background-color: #161923;
+  color: #bcbdd0;
+  min-height: 5vh;
   padding: 25px 60px 25px 30px;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +51,7 @@ export const NavbarLink = styled.span`
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   :hover {
-    color: #f09b00;
+    color: #2b79a2;
   }
 
   @media screen and (max-width: 900px) {
@@ -83,23 +84,8 @@ export const NavbarMobileMenu = styled.div`
 export const NavbarMobileLines = styled.span`
   width: 22.5px;
   height: 2px;
-  background-color: white;
+  background-color: #bcbdd0;
   border-radius: 5px;
-`;
-
-export const NavbarImageContainer = styled.div`
-  width: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (max-width: 900px) {
-    width: 80px;
-  }
-
-  @media screen and (max-width: 550px) {
-    width: 60px;
-  }
 `;
 
 export const LogoContainer = styled.div`

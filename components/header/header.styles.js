@@ -5,7 +5,6 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5vh 0;
   gap: 60px;
 
   @media screen and (max-width: 550px) {
@@ -15,6 +14,7 @@ export const HeaderContainer = styled.div`
 
 export const HeaderTextContainer = styled.div`
   max-width: 45%;
+  color: #bcbdd0;
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.5;

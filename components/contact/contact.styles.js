@@ -5,9 +5,8 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8vh 0;
   gap: 60px;
-  width: 90%;
+  width: 65%;
 `;
 
 export const ContactFormContainer = styled.form`
@@ -26,7 +25,7 @@ export const ContactFormContainer = styled.form`
   }
 
   @media screen and (max-width: 550px) {
-    width: 80%;
+    width: 100%;
     padding: 2vh 0;
   }
 `;
@@ -64,7 +63,7 @@ export const ButtonContainer = styled.button`
   background-color: inherit;
 
   @media screen and (max-width: 550px) {
-    max-width: 200px;
+    display: inline-block;
   }
 `;
 

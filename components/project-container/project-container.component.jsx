@@ -2,6 +2,8 @@ import React from "react";
 
 import Image from "next/image";
 
+import ButtonComponent from "../button/button.component";
+
 import {
   ProjectContainer,
   ProjectImageContainer,
@@ -41,9 +43,11 @@ const ProjectContainerComponent = ({
           <ProjectTool key={key}>{tool}</ProjectTool>
         ))}
       </ProjectToolsContainer>
-      <ViewProjectLink href={websiteURL} target="_blank" rel="noopener noreferrer">
-        VIEW PROJECT
-      </ViewProjectLink>
+      <a href={websiteURL} target="_blank" rel="noopener noreferrer">
+      <ButtonComponent>
+      VIEW PROJECT
+      </ButtonComponent>
+      </a>
     </ProjectContentContainer>
   </ProjectContainer>
 );

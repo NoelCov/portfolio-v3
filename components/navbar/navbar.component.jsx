@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import onClickOutside from "react-onclickoutside";
 
 import Link from "next/link";
-import Image from "next/image";
 
 import {
   NavbarContainer,
@@ -11,7 +10,6 @@ import {
   NavbarLink,
   NavbarMobileMenu,
   NavbarMobileLines,
-  NavbarImageContainer,
   LogoContainer,
   LogoContainerText,
 } from "./navbar.styles";
@@ -28,14 +26,6 @@ const NavbarComponent = () => {
       <Link href="/">
         <a>
           <LogoContainer>
-            <NavbarImageContainer>
-              <Image
-                src="/images/gengarsvg.svg"
-                width="380"
-                height="350"
-                alt="navbar icon"
-              />
-            </NavbarImageContainer>
             <LogoContainerText>NOEL CODES</LogoContainerText>
           </LogoContainer>
         </a>

@@ -3,10 +3,10 @@ import React, { FC } from "react";
 import styled from "styled-components";
 
 const SectionTitleContainer = styled.h1`
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: Manrope;
   margin: 0;
-  color: white;
+  color: #bcbdd0;
   text-align: center;
 
   @media screen and (max-width: 900px) {

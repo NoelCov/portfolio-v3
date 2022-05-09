@@ -13,7 +13,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
-  color: white;
+  color: #bcbdd0;
 }
 
 a {

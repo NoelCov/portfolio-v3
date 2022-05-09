@@ -1,9 +1,11 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   width: 100vw;
-  background-color: #161616;
+  background-color: #161923;
+  color: #bcbdd0;
   display: flex;
+  min-height: 5vh;
   padding: 30px 50px;
   align-items: center;
   justify-content: space-between;
@@ -19,34 +21,6 @@ export const FooterContainer = styled.div`
   }
 `;
 
-export const FooterLinksContainer = styled.div`
-  display: flex;
-  gap: 20px;
-  text-align: center;
-
-  @media screen and (max-width: 660px) {
-    gap: 15px;
-    display: flex;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50%;
-  }
-`;
-
-const styles = css`
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-:hover {
-  color: #f09b00;
-}
-`
-
-export const FooterLinkContainer = styled.a`
-  ${styles};
-`;
-
-
-
 export const FooterSocialsContainer = styled.div`
   display: flex;
   gap: 50px;
@@ -59,7 +33,11 @@ export const FooterSocialsContainer = styled.div`
 export const FooterSocialContainer = styled.a`
   font-size: 1.5rem;
   display: flex;
-  ${styles};
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  :hover {
+    color: #2b79a2;
+  }
 
   @media screen and (max-width: 900px) {
     font-size: 1.2rem;

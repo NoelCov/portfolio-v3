@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const LayoutContainer = styled.div`
   width: 100vw;
-  background-color: #121212;
-  min-height: 80vh;
+  background-color: #161923;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,10 +12,10 @@ export const LayoutContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     padding: 0 8vw;
+    height: auto;
   }
 
   @media screen and (max-width: 550px) {
-    padding: 0 5vw;
-    min-height: 70vh;
+    padding: 5vh 3vw;
   }
 `;

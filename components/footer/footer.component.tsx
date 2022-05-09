@@ -1,11 +1,7 @@
 import React from "react";
 
-import Link from "next/link";
-
 import {
   FooterContainer,
-  FooterLinksContainer,
-  FooterLinkContainer,
   FooterSocialsContainer,
   FooterSocialContainer,
 } from "./footer.styles";
@@ -49,14 +45,6 @@ const FooterComponent = () => {
           <AiOutlineLinkedin />
         </FooterSocialContainer>
       </FooterSocialsContainer>
-      <FooterLinksContainer>
-        <Link href="/projects" passHref>
-          <FooterLinkContainer>Projects</FooterLinkContainer>
-        </Link>
-        <Link href="/contact" passHref>
-          <FooterLinkContainer>Contact</FooterLinkContainer>
-        </Link>
-      </FooterLinksContainer>
     </FooterContainer>
   );
 };
