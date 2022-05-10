@@ -5,7 +5,7 @@ import Head from "next/head";
 import LayoutComponent from "../components/layout/layout.component";
 import ProjectsComponent from "../components/projects/projects.component";
 
-import LandingImage from "../public/images/noelcodeshero.jpg";
+import LandingImage from "../public/images/linkedin.jpg";
 
 const Projects = () => (
   <>

@@ -69,11 +69,6 @@ export const ProjectTitle = styled.h3`
 export const ProjectText = styled.p`
   margin: 0;
   padding: 0 30px;
-  font-size: 1.2rem;
-
-  @media screen and (max-width: 550px) {
-    padding: 0;
-  }
 `;
 
 export const ProjectToolsContainer = styled.div`

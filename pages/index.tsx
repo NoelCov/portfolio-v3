@@ -4,7 +4,7 @@ import Head from "next/head";
 import Layout from "../components/layout/layout.component";
 import Header from "../components/header/header.component";
 
-import LandingImage from "../public/images/noelcodeshero.jpg";
+import LandingImage from "../public/images/linkedin.jpg";
 
 const Home: NextPage = () => (
   <>

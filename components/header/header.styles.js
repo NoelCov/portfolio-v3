@@ -8,15 +8,12 @@ export const HeaderContainer = styled.div`
   gap: 60px;
 
   @media screen and (max-width: 550px) {
-    padding: 6vh 0;
+    padding: 4vh 0;
   }
 `;
 
-export const HeaderTextContainer = styled.div`
-  max-width: 45%;
-  color: #bcbdd0;
-  text-align: center;
-  font-size: 1.1rem;
+export const HeaderTextContainer = styled.p`
+  max-width: 35%;
   line-height: 1.5;
 
   @media screen and (max-width: 900px) {
@@ -25,6 +22,5 @@ export const HeaderTextContainer = styled.div`
 
   @media screen and (max-width: 550px) {
     max-width: 95%;
-    font-size: 1rem;
   }
 `;

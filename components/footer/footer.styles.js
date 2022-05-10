@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
   width: 100vw;
   background-color: #161923;
-  color: #bcbdd0;
   display: flex;
   min-height: 5vh;
   padding: 30px 50px;
@@ -33,11 +32,6 @@ export const FooterSocialsContainer = styled.div`
 export const FooterSocialContainer = styled.a`
   font-size: 1.5rem;
   display: flex;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  :hover {
-    color: #2b79a2;
-  }
 
   @media screen and (max-width: 900px) {
     font-size: 1.2rem;

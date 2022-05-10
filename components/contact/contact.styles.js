@@ -6,26 +6,24 @@ export const ContactContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 60px;
-  width: 65%;
 `;
 
 export const ContactFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45%;
+  width: 35vw;
   gap: 40px;
   padding: 5vh 0;
   margin: 0 auto;
 
   @media screen and (max-width: 900px) {
-    width: 70%;
     margin: 0 auto;
+    width: 60vw;
     gap: 60px;
   }
 
   @media screen and (max-width: 550px) {
-    width: 100%;
     padding: 2vh 0;
   }
 `;

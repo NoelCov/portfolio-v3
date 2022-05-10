@@ -16,9 +16,32 @@ body {
   color: #bcbdd0;
 }
 
+p {
+  font-size: 1.4rem;
+  text-align: center;
+
+  @media screen and (max-width: 900px){
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 1rem;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  :hover {
+    color: #2b79a2;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 1rem;
+  }
 }
 
 * {

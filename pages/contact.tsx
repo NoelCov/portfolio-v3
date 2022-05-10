@@ -4,7 +4,7 @@ import Head from "next/head";
 import Layout from "../components/layout/layout.component";
 import Contact from "../components/contact/contact.component";
 
-import LandingImage from "../public/images/noelcodeshero.jpg";
+import LandingImage from "../public/images/linkedin.jpg";
 
 const ContactPage: NextPage = () => (
   <>

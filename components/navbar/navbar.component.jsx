@@ -7,11 +7,9 @@ import Link from "next/link";
 import {
   NavbarContainer,
   NavbarLinksContainer,
-  NavbarLink,
   NavbarMobileMenu,
   NavbarMobileLines,
-  LogoContainer,
-  LogoContainerText,
+  NavbarTitle
 } from "./navbar.styles";
 
 const NavbarComponent = () => {
@@ -24,11 +22,7 @@ const NavbarComponent = () => {
   return (
     <NavbarContainer>
       <Link href="/">
-        <a>
-          <LogoContainer>
-            <LogoContainerText>NOEL CODES</LogoContainerText>
-          </LogoContainer>
-        </a>
+            <NavbarTitle>NOEL CODES</NavbarTitle>
       </Link>
       <NavbarMobileMenu onClick={onClick}>
         <NavbarMobileLines />
@@ -37,10 +31,10 @@ const NavbarComponent = () => {
       </NavbarMobileMenu>
       <NavbarLinksContainer hidden={hidden}>
         <Link href="/projects" passHref>
-          <NavbarLink onClick={onClick}>PROJECTS</NavbarLink>
+          <a onClick={onClick}>PROJECTS</a>
         </Link>
         <Link href="/contact" passHref>
-          <NavbarLink onClick={onClick}>CONTACT</NavbarLink>
+          <a onClick={onClick}>CONTACT</a>
         </Link>
       </NavbarLinksContainer>
     </NavbarContainer>
