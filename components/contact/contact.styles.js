@@ -6,13 +6,14 @@ export const ContactContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 60px;
+  width: 100%;
 `;
 
 export const ContactFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 35vw;
+  width: 65%;
   gap: 40px;
   padding: 5vh 0;
   margin: 0 auto;
@@ -51,17 +52,16 @@ export const FormInformationContainer = styled.div`
 `;
 
 export const ButtonContainer = styled.button`
-  display: flex;
-  align-items: center;
+  display: block;
   cursor: pointer;
-  max-width: 235px;
+  max-width: 250px;
   padding: 0;
   border: none;
   font-family: "Nunito Sans", sans-serif;
   background-color: inherit;
 
   @media screen and (max-width: 550px) {
-    display: inline-block;
+    margin: 0 auto;
   }
 `;
 

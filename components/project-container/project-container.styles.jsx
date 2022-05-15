@@ -1,40 +1,38 @@
 import styled from "styled-components";
 
-export const ProjectContainer = styled.div`
+export const ProjectContainer = styled.div `
   width: 100%;
-  display: flex;
+  margin: 0 auto;
+  display: block;
+  height: auto;
   align-items: center;
-  gap: 30px;
-
-  :nth-of-type(odd) {
-    flex-flow: row-reverse;
-  }
-
-  @media screen and (max-width: 900px) {
-    display: flex;
-    flex-direction: column !important;
-    height: auto;
-  }
 `;
 
-export const ProjectImageContainer = styled.div`
-  width: 60%;
+export const ProjectImageContainer = styled.div `
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.9;
+  margin: 0 auto;
+  width: 75%;
 
   :hover {
     transform: scale(1.03);
     opacity: 1;
   }
 
+  @media screen and (max-width: 1200px) {
+    width: 85%;
+  }
+
   @media screen and (max-width: 900px) {
-    width: 100%;
+    width: 90%;
   }
 `;
 
-export const ProjectContentContainer = styled.div`
-  width: 45%;
-  min-height: 380px;
+export const ProjectContentContainer = styled.div `
+  margin: 30px auto;
+  width: 65%;
+  gap: 40px;
+  padding: 80px 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -43,35 +41,49 @@ export const ProjectContentContainer = styled.div`
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 
+  @media screen and (max-width: 1200px) {
+    gap: 20px;
+    width: 80%;
+    padding: 40px 25px;
+
+  }
+
   @media screen and (max-width: 900px) {
-    width: 95%;
+    width: 85%;
+    padding: 20px 25px;
     min-height: 280px;
-    padding: 20px;
-    gap: 40px;
   }
 
   @media screen and (max-width: 550px) {
     border-top: none;
-    gap: 30px;
-    width: 100%;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 25px;
   }
 `;
 
-export const ProjectTitle = styled.h3`
+export const ProjectTitle = styled.h3 `
   margin: 0;
   color: teal;
-  font-size: 1.5rem;
+  font-size: 2rem;
+
+  @media screen and (max-width: 1200px) {
+   font-size: 1.8rem; 
+  }
+
+  @media screen and (max-width: 900px) {
+   font-size: 1.5rem; 
+  }
 
   @media screen and (max-width: 550px) {
     font-size: 1.2rem;
   }
 `;
-export const ProjectText = styled.p`
+export const ProjectText = styled.p `
   margin: 0;
-  padding: 0 30px;
 `;
 
-export const ProjectToolsContainer = styled.div`
+export const ProjectToolsContainer = styled.div `
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,30 +101,7 @@ export const ProjectToolsContainer = styled.div`
   }
 `;
 
-export const ProjectTool = styled.p`
+export const ProjectTool = styled.p `
   margin: 0;
   color: teal;
-  font-size: 1rem;
 `;
-
-export const ViewProjectLink = styled.a`
-  font-size: 0.8rem;
-  background-color: orange;
-  color: black;
-  padding: 15px 50px;
-  transition: 300ms;
-
-  &:hover {
-    background-color: #ba7800;
-  }
-
-  @media screen and (max-width: 900px) {
-    padding: 15px 40px;
-  }
-
-  @media screen and (max-width: 550px) {
-    padding: 10px 30px;
-  }
-`
-
-

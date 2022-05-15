@@ -12,7 +12,6 @@ import {
   ProjectText,
   ProjectToolsContainer,
   ProjectTool,
-  ViewProjectLink
 } from "./project-container.styles";
 
 const ProjectContainerComponent = ({
@@ -28,6 +27,7 @@ const ProjectContainerComponent = ({
     <ProjectImageContainer>
       <a href={websiteURL} target="_blank" rel="noopener noreferrer">
         <Image
+          layout="responsive"
           alt="Project"
           src={imageSrc}
           height={imageHeight}

@@ -15,14 +15,14 @@ const HeaderComponent = () => (
     </SectionTitle>
     <ImageContainerComponent
       src="/images/linkedin.jpg"
-      width={550}
-      height={650}
+      width={1753}
+      height={2401}
       priority="true"
       alt="Noel Covarrubias"
     />
     <HeaderTextContainer>
-      Hey, I&apos;m Noel, I&apos;m a self-taught software engineer. Besides programming, which is what I do almost all day I also enjoy
-      to read, work out, play video games and to learn about other topics.
+      <p>Hey, I&apos;m Noel, I&apos;m a self-taught software engineer. Besides programming, which is what I do almost all day I also enjoy
+      to read, work out, play video games and to learn about other topics.</p>
     </HeaderTextContainer>
     <Link href="/contact">
       <a>

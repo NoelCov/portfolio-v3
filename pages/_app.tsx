@@ -20,7 +20,7 @@ p {
   font-size: 1.4rem;
   text-align: center;
 
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 1200px) {
     font-size: 1.2rem;
   }
 
