@@ -2,28 +2,26 @@ import React, { FC } from "react";
 
 import styled from "styled-components";
 
+import { breakpoints } from "../media";
+
 const SectionTitleContainer = styled.h1`
-  font-size: 5.5rem;
-  font-family: Manrope;
-  margin: 0;
-  color: #bcbdd0;
-  text-align: center;
+    font-size: 1.5rem;
+    font-family: Manrope;
+    margin: 0;
+    color: #bcbdd0;
+    text-align: center;
 
-  @media screen and (max-width: 1200px) {
-    font-size: 3.5rem;
-  }
+    @media (min-width: ${breakpoints.md}) {
+        font-size: 2.5rem;
+    }
 
-  @media screen and (max-width: 900px) {
-    font-size: 2.5rem;
-  }
-
-  @media screen and (max-width: 550px) {
-    font-size: 2rem;
-  }
+    @media (min-width: ${breakpoints.lg}) {
+        font-size: 3.5rem;
+    }
 `;
 
 const SectionTitle: FC = ({ children }) => (
-  <SectionTitleContainer>{children}</SectionTitleContainer>
+    <SectionTitleContainer>{children}</SectionTitleContainer>
 );
 
 export default SectionTitle;

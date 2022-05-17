@@ -5,6 +5,8 @@ import { createGlobalStyle } from "styled-components";
 import Navbar from "../components/navbar/navbar.component";
 import Footer from "../components/footer/footer.component";
 
+import { breakpoints } from "../components/media";
+
 const GlobalStyle = createGlobalStyle`
 html,
 body {
@@ -17,31 +19,32 @@ body {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-align: center;
+  margin: 0;
 
-  @media screen and (max-width: 1200px) {
-    font-size: 1.2rem;
-  }
+  @media (min-width: ${breakpoints.sm}) {
+        font-size: 1.2rem;
+    }
 
-  @media screen and (max-width: 550px) {
-    font-size: 1rem;
+    @media (min-width: ${breakpoints.md}) {
+        font-size: 1.3rem;
+    }
+
+  @media (min-width: ${breakpoints.lg}) {
+    font-size: 1.4rem;
   }
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  :hover {
-    color: #2b79a2;
-  }
-
-  @media screen and (max-width: 900px) {
+    color: inherit;
+    text-decoration: none;
     font-size: 1rem;
-  }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    :hover {
+        color: #2b79a2;
+    }
 }
 
 * {
@@ -57,15 +60,19 @@ input {
     opacity: 1;
   }
 }
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #161923 !important;
+}
 `;
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <>
-    <GlobalStyle />
-    <Navbar />
-    <Component {...pageProps} />
-    <Footer />
-  </>
+    <>
+        <GlobalStyle />
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+    </>
 );
 
 export default MyApp;

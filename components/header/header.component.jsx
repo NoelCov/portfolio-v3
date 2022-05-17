@@ -1,35 +1,56 @@
 import React from "react";
 
-import { HeaderContainer, HeaderTextContainer } from "./header.styles";
+import Image from "next/dist/client/image";
+
+import {
+    HeaderContainer,
+    HeaderTextContainer,
+    HeaderTitleContainer,
+    HeaderTitle,
+    ImageContainer,
+    HeaderTitleP,
+    ButtonContainer,
+} from "./header.styles";
 
 import Link from "next/link";
 
-import SectionTitle from "../utils/section-title.component";
 import Button from "../button/button.component";
-import ImageContainerComponent from "../image-container/image-container.component";
 
 const HeaderComponent = () => (
-  <HeaderContainer>
-    <SectionTitle>
-      NOEL<span> &nbsp;</span>COVARRUBIAS
-    </SectionTitle>
-    <ImageContainerComponent
-      src="/images/linkedin.jpg"
-      width={1753}
-      height={2401}
-      priority="true"
-      alt="Noel Covarrubias"
-    />
-    <HeaderTextContainer>
-      <p>Hey, I&apos;m Noel, I&apos;m a self-taught software engineer. Besides programming, which is what I do almost all day I also enjoy
-      to read, work out, play video games and to learn about other topics.</p>
-    </HeaderTextContainer>
-    <Link href="/contact">
-      <a>
-        <Button>CONTACT ME</Button>
-      </a>
-    </Link>
-  </HeaderContainer>
+    <HeaderContainer>
+        <HeaderTitleContainer>
+            <HeaderTitleP>{"Hello, I'm"}</HeaderTitleP>
+            <HeaderTitle>NOEL</HeaderTitle>
+            <HeaderTitleP>
+                {"a "}
+                <HeaderTitleP className="selftaught">
+                    {"self-taught"}
+                </HeaderTitleP>
+                {" developer."}
+            </HeaderTitleP>
+        </HeaderTitleContainer>
+        <ImageContainer>
+            <Image
+                src="/images/linkedin.jpg"
+                width={1753}
+                height={2401}
+                priority="true"
+                alt="Noel Covarrubias"
+                layout="responsive"
+            />
+        </ImageContainer>
+        <HeaderTextContainer>
+            {"Hey, I'm Noel, I'm a self-taught software engineer. Besides programming, which is what I do almost all day I" +
+                "also enjoy to read, work out, play video games and to learn about other topics."}
+        </HeaderTextContainer>
+        <ButtonContainer>
+            <Link href="/contact">
+                <a>
+                    <Button>CONTACT ME</Button>
+                </a>
+            </Link>
+        </ButtonContainer>
+    </HeaderContainer>
 );
 
 export default HeaderComponent;
