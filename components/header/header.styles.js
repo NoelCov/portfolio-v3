@@ -62,7 +62,7 @@ export const HeaderTitle = styled.h1`
 export const HeaderTitleP = styled.span`
     font-size: 1.8rem;
 
-    .selftaught {
+    .coloredText {
         color: #2b79a2;
     }
 

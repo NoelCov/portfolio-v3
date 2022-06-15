@@ -2,6 +2,10 @@ import React from "react";
 
 import Image from "next/dist/client/image";
 
+import Link from "next/link";
+
+import Button from "../button/button.component";
+
 import {
     HeaderContainer,
     HeaderTextContainer,
@@ -12,10 +16,6 @@ import {
     ButtonContainer,
 } from "./header.styles";
 
-import Link from "next/link";
-
-import Button from "../button/button.component";
-
 const HeaderComponent = () => (
     <HeaderContainer>
         <HeaderTitleContainer>
@@ -23,10 +23,9 @@ const HeaderComponent = () => (
             <HeaderTitle>NOEL</HeaderTitle>
             <HeaderTitleP>
                 {"a "}
-                <HeaderTitleP className="selftaught">
-                    {"self-taught"}
+                <HeaderTitleP className="coloredText">
+                    {"Software Engineer."}
                 </HeaderTitleP>
-                {" developer."}
             </HeaderTitleP>
         </HeaderTitleContainer>
         <ImageContainer>
@@ -40,8 +39,8 @@ const HeaderComponent = () => (
             />
         </ImageContainer>
         <HeaderTextContainer>
-            {"Hey, I'm Noel, I'm a self-taught software engineer. Besides programming, which is what I do almost all day I" +
-                "also enjoy to read, work out, play video games and to learn about other topics."}
+            {"Hey, I'm Noel. I'm a self-taught software engineer. Besides programming, which is what I do almost all day, I also enjoy reading, working out, playing video games, and learning about other topics." +
+                " I'm always looking for new opportunities where I can grow and learn, if you have anything interesting feel free to reach out."}
         </HeaderTextContainer>
         <ButtonContainer>
             <Link href="/contact">
