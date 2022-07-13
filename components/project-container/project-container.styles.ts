@@ -12,11 +12,9 @@ export const ProjectImageContainer = styled.div`
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0.9;
     margin: 0 auto;
-    width: 90%;
 
     :hover {
         transform: scale(1.03);
-        opacity: 1;
     }
 
     @media (min-width: ${breakpoints.lg}) {
@@ -63,12 +61,12 @@ export const Separator = styled.hr`
     height: 3px;
     border: none;
     margin: 0 auto;
-    background-color: #bcbdd0;
+    background-color: #252C46;
 `;
 
 export const ProjectTitle = styled.h3`
     margin: 0;
-    color: teal;
+    color: #B18C19;
     font-size: 1.2rem;
 
     @media (min-width: ${breakpoints.md}) {
@@ -108,7 +106,6 @@ export const ProjectToolsContainer = styled.div`
 export const ProjectTool = styled.p`
     margin: 0;
     font-size: 1rem;
-    color: teal;
 
     @media (min-width: ${breakpoints.lg}) {
         font-size: 1.1rem;

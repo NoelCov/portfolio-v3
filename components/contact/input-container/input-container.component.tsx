@@ -28,7 +28,7 @@ const InputComponent = ({
         <LabelInputContainer>
             <label htmlFor={id}>
                 {text}
-                <span style={{ color: "orange" }}>{"  *"}</span>
+                <span style={{ color: "#B18C19" }}>{"  *"}</span>
             </label>
             {componentType === formOptions.formInput ? (
                 <FormInput id={id} name={id} type={type} required />

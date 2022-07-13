@@ -15,7 +15,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
-  color: #bcbdd0;
+  color: #BCBECD;
 }
 
 p {
@@ -38,13 +38,15 @@ p {
 
 a {
     color: inherit;
+    color: #B18C19;
     text-decoration: none;
     font-size: 1rem;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     :hover {
-        color: #2b79a2;
-    }
+        /* color: #B18C19; */
+        color: #BCBECD;
+      }
 }
 
 * {

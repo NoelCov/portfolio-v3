@@ -8,7 +8,6 @@ const SectionTitleContainer = styled.h1`
     font-size: 1.5rem;
     font-family: Manrope;
     margin: 0;
-    color: #bcbdd0;
     text-align: center;
 
     @media (min-width: ${breakpoints.md}) {

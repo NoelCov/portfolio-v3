@@ -7,21 +7,20 @@ export const LabelInputContainer = styled.div`
     gap: 30px;
     width: 100%;
     font-size: 1rem;
-    color: #bcbdd0;
 `;
 
 const inputStyles = css`
     background-color: inherit;
     border: none;
     font-size: 0.9rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #BCBECD;
     transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
 
     :focus {
         outline: none;
         border: none;
-        box-shadow: 0 2px 0 0 #2b79a2;
+        box-shadow: 0 1px 0 0 #252C46;
     }
 
     @media (min-width: ${breakpoints.md}) {
@@ -34,7 +33,7 @@ export const FormInput = styled.input`
 `;
 
 export const TextAreaContainer = styled.textarea`
-    color: white;
+    color: #bcbecd;
     font-family: "Nunito Sans", sans-serif;
     ${inputStyles}
 `;

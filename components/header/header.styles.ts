@@ -63,7 +63,7 @@ export const HeaderTitleP = styled.span`
     font-size: 1.8rem;
 
     .coloredText {
-        color: #2b79a2;
+        color: #b18c19;
     }
 
     @media (min-width: ${breakpoints.md}) {
@@ -101,7 +101,7 @@ export const HeaderTextContainer = styled.div`
 export const ImageContainer = styled.div`
     display: block;
     width: 80%;
-    border: 1px solid #bcbdd0;
+    border: 1px solid #BCBECD;
 
     @media (min-width: ${breakpoints.lg}) {
         grid-area: image;

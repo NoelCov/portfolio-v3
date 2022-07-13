@@ -6,7 +6,6 @@ export const NavbarContainer = styled.nav`
     display: flex;
     width: 100vw;
     background-color: #161923;
-    color: #bcbdd0;
     min-height: 5vh;
     padding: 15px 20px;
     align-items: center;
@@ -82,6 +81,7 @@ export const NavbarTitle = styled.p`
     font-weight: bolder;
     font-family: Poppins;
     font-size: 1.4rem;
+    color: #B18C19;
 
     @media (min-width: ${breakpoints.md}) {
         font-size: 1rem;
