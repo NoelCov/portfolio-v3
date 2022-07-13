@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { breakpoints } from "../media";
+import { breakpoints } from "../breakpoints";
 
 export const ButtonContainer = styled.div`
     font-size: 0.9rem;

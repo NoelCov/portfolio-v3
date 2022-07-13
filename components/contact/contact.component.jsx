@@ -15,7 +15,7 @@ import SectionTitle from "../utils/section-title.component";
 import Button from "../button/button.component";
 import ImageContainerComponent from "../image-container/image-container.component";
 import Inputcomponent, {
-    TextAreaComponent,
+    formOptions,
 } from "./input-container/input-container.component";
 
 const serviceId = process.env.NEXT_PUBLIC_ES_SERVICE_ID;
@@ -31,7 +31,6 @@ const ContactPage = () => {
 
         emailjs.sendForm(serviceId, templateId, e.target, userId).then(
             (res) => {
-                console.log(res.text);
                 e.target.reset();
                 setSuccessMessage(true);
 
@@ -40,7 +39,6 @@ const ContactPage = () => {
                 }
             },
             (err) => {
-                console.log(err.text);
                 setErrorMessage(true);
             }
         );
@@ -74,11 +72,13 @@ const ContactPage = () => {
                                 id="firstName"
                                 type="text"
                                 text="First Name"
+                                componentType={formOptions.formInput}
                             />
                             <Inputcomponent
                                 id="lastName"
                                 type="text"
                                 text="Last Name"
+                                componentType={formOptions.formInput}
                             />
                         </FormNamesInputContainer>
                         <FormInformationContainer>
@@ -86,20 +86,23 @@ const ContactPage = () => {
                                 id="email"
                                 type="email"
                                 text="Email"
+                                componentType={formOptions.formInput}
                             />
                             <Inputcomponent
                                 id="subject"
                                 type="text"
                                 text="Subject"
+                                componentType={formOptions.formInput}
                             />
-                            <TextAreaComponent
+                            <Inputcomponent
                                 id="message"
                                 type="text"
                                 text="Message"
+                                componentType={formOptions.textArea}
                             />
                         </FormInformationContainer>
                         <ButtonContainer>
-                            <Button>SEND MESSAGE</Button>
+                            <Button text="SEND MESSAGE" />
                         </ButtonContainer>
                     </ContactFormContainer>
                 </>

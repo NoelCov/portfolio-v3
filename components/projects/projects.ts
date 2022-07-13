@@ -1,4 +1,14 @@
-export const projectsArray = [
+export interface IProject {
+  imageSrc: string;
+  imageWidth: number;
+  imageHeight: number;
+  projectContent: string;
+  projectTitle: string;
+  websiteURL: string;
+  toolsUsed: string[]
+}
+
+export const projectsArray : IProject[] = [
   {
     imageSrc: "/images/projects/AlphaFisioterapia.png",
     imageWidth: 1920,

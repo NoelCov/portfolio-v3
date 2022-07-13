@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import Navbar from "../components/navbar/navbar.component";
 import Footer from "../components/footer/footer.component";
 
-import { breakpoints } from "../components/media";
+import { breakpoints } from "../components/breakpoints";
 
 const GlobalStyle = createGlobalStyle`
 html,

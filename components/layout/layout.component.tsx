@@ -1,9 +1,14 @@
-import React, { FC } from "react";
+import { NextPage } from "next";
+import React, { FC, ReactNode } from "react";
 
 import { LayoutContainer } from "./layout.styles";
 
-const LayoutComponent: FC = ({ children }) => (
-  <LayoutContainer>{children}</LayoutContainer>
+interface layoutProps {
+    children?: ReactNode;
+}
+
+const LayoutComponent = ({ children }: layoutProps): JSX.Element => (
+    <LayoutContainer>{children}</LayoutContainer>
 );
 
 export default LayoutComponent;

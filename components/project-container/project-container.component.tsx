@@ -15,6 +15,16 @@ import {
     Separator,
 } from "./project-container.styles";
 
+interface projectContainerProps {
+    imageSrc: string;
+    imageWidth: number;
+    imageHeight: number;
+    projectContent: string;
+    projectTitle: string;
+    websiteURL: string;
+    toolsUsed: string[];
+}
+
 const ProjectContainerComponent = ({
     imageSrc,
     imageWidth,
@@ -23,7 +33,7 @@ const ProjectContainerComponent = ({
     projectTitle,
     websiteURL,
     toolsUsed,
-}) => (
+}: projectContainerProps): JSX.Element => (
     <ProjectContainer>
         <ProjectImageContainer>
             <a href={websiteURL} target="_blank" rel="noopener noreferrer">
@@ -45,7 +55,7 @@ const ProjectContainerComponent = ({
                 ))}
             </ProjectToolsContainer>
             <a href={websiteURL} target="_blank" rel="noopener noreferrer">
-                <ButtonComponent>VIEW PROJECT</ButtonComponent>
+                <ButtonComponent text={"VIEW PROJECT"} />
             </a>
         </ProjectContentContainer>
         <Separator />

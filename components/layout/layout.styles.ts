@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { breakpoints } from "../media";
+import { breakpoints } from "../breakpoints";
 
 export const LayoutContainer = styled.div`
     padding: 5vh 0;

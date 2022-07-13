@@ -33,7 +33,7 @@ const HeaderComponent = () => (
                 src="/images/linkedin.jpg"
                 width={1753}
                 height={2401}
-                priority="true"
+                priority={true}
                 alt="Noel Covarrubias"
                 layout="responsive"
             />
@@ -45,7 +45,7 @@ const HeaderComponent = () => (
         <ButtonContainer>
             <Link href="/contact">
                 <a>
-                    <Button>CONTACT ME</Button>
+                    <Button text={"CONTACT ME"} />
                 </a>
             </Link>
         </ButtonContainer>

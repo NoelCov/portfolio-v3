@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import styled from "styled-components";
 
-import { breakpoints } from "../media";
+import { breakpoints } from "../breakpoints";
 
 const SectionTitleContainer = styled.h1`
     font-size: 1.5rem;

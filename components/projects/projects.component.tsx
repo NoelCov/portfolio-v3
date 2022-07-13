@@ -2,11 +2,11 @@ import React from "react";
 
 import styled from "styled-components";
 
-import { projectsArray } from "./projects.js";
+import { projectsArray, IProject } from "./projects";
 
 import ProjectContainerComponent from "../project-container/project-container.component";
 import SectionTitle from "../utils/section-title.component";
-import { breakpoints } from "../media.js";
+import { breakpoints } from "../breakpoints";
 
 const ProjectsContainer = styled.div`
     display: flex;
@@ -24,7 +24,7 @@ const ProjectsContainer = styled.div`
     }
 `;
 
-const Projects = () => (
+const Projects = (): JSX.Element => (
     <ProjectsContainer>
         <SectionTitle>PROJECTS</SectionTitle>
         {projectsArray.map((project, key) => {

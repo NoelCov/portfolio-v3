@@ -1,9 +1,13 @@
-import React, { FC } from "react";
+import React from "react";
 
 import { ButtonContainer } from "./button.styles";
 
-const ButtonComponent: FC = ({ children }) => (
-  <ButtonContainer>{children}</ButtonContainer>
+interface ButtonProps {
+    text: string;
+}
+
+const ButtonComponent = ({ text }: ButtonProps): JSX.Element => (
+    <ButtonContainer>{text}</ButtonContainer>
 );
 
 export default ButtonComponent;
