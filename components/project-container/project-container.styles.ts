@@ -1,11 +1,25 @@
 import styled from "styled-components";
 
-import { breakpoints } from "../breakpoints";
+import { breakpoints } from "../../utils/breakpoints";
 
 export const ProjectContainer = styled.div`
-    width: 100%;
+    width: 90vw;
     margin: 0 auto;
     display: block;
+    margin-bottom: 4rem;
+
+    @media (min-width: ${breakpoints.md}){
+        width: 80vw;
+    }
+
+    @media (min-width: ${breakpoints.lg}){
+        width: 70vw;
+    }
+
+    @media (min-width: ${breakpoints.xl}){
+        width: 50vw;
+        margin-bottom: 10rem;
+    }
 `;
 
 export const ProjectImageContainer = styled.div`
@@ -15,14 +29,6 @@ export const ProjectImageContainer = styled.div`
 
     :hover {
         transform: scale(1.03);
-    }
-
-    @media (min-width: ${breakpoints.lg}) {
-        width: 80%;
-    }
-
-    @media (min-width: ${breakpoints.xl}) {
-        width: 70%;
     }
 `;
 
@@ -38,20 +44,19 @@ export const ProjectContentContainer = styled.div`
     padding: 25px;
 
     @media (min-width: ${breakpoints.md}) {
-        width: 85%;
         gap: 50px;
         padding: 20px 25px;
         min-height: 280px;
+        width: 90%;
     }
 
     @media (min-width: ${breakpoints.lg}) {
-        width: 80%;
         padding: 40px 25px;
     }
 
     @media (min-width: ${breakpoints.xl}) {
         margin: 30px auto;
-        width: 65%;
+        width: 80%;
         padding: 80px 25px;
     }
 `;

@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import Navbar from "../components/navbar/navbar.component";
 import Footer from "../components/footer/footer.component";
 
-import { breakpoints } from "../components/breakpoints";
+import { breakpoints } from "../utils/breakpoints";
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -18,10 +18,13 @@ body {
   color: #BCBECD;
 }
 
-p {
-  font-size: 1.1rem;
-  text-align: center;
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 1.1rem;
 
   @media (min-width: ${breakpoints.sm}) {
         font-size: 1.2rem;
@@ -36,6 +39,12 @@ p {
   }
 }
 
+li {
+  @media (min-width: ${breakpoints.lg}) {
+    font-size: 1.3rem;
+  }
+}
+
 a {
     color: inherit;
     color: #B18C19;
@@ -44,7 +53,6 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     :hover {
-        /* color: #B18C19; */
         color: #BCBECD;
       }
 }

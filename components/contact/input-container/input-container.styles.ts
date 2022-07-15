@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { breakpoints } from "../../breakpoints";
+import { breakpoints } from "../../../utils/breakpoints";
 
 export const LabelInputContainer = styled.div`
     display: flex;

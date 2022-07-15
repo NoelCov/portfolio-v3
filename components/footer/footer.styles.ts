@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { breakpoints } from "../breakpoints";
+import { breakpoints } from "../../utils/breakpoints";
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.footer`
     width: 100vw;
     background-color: #161923;
     display: flex;

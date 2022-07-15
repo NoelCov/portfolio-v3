@@ -11,7 +11,7 @@ import {
     ErrorMessage,
 } from "./contact.styles";
 
-import SectionTitle from "../utils/section-title.component";
+import SectionTitle from "../../utils/section-title.component";
 import Button from "../button/button.component";
 import ImageContainerComponent from "../image-container/image-container.component";
 import Inputcomponent, {

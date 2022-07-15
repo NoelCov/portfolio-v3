@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Image from "next/image";
-import { breakpoints } from "../breakpoints";
+import { breakpoints } from "../../utils/breakpoints";
 
 const ImageContainer = styled.div`
     display: block;

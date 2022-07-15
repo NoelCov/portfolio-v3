@@ -2,25 +2,19 @@ import React from "react";
 
 import styled from "styled-components";
 
-import { projectsArray, IProject } from "./projects";
+import { projectsArray } from "./projects";
 
 import ProjectContainerComponent from "../project-container/project-container.component";
-import SectionTitle from "../utils/section-title.component";
-import { breakpoints } from "../breakpoints";
+import SectionTitle from "../../utils/section-title.component";
+import { breakpoints } from "../../utils/breakpoints";
 
 const ProjectsContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 50px;
     padding: 0;
 
     @media (min-width: ${breakpoints.md}) {
-        padding: 8vh 0 10vh;
-    }
-
-    @media (min-width: ${breakpoints.lg}) {
         padding: 8vh 0;
-        gap: 150px;
     }
 `;
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import { breakpoints } from "../breakpoints";
+import { breakpoints } from "../../utils/breakpoints";
+import { colors } from "../../utils/colorOptions";
 
 export const HeaderContainer = styled.div`
     display: flex;
@@ -25,7 +26,7 @@ export const HeaderContainer = styled.div`
     }
 
     @media (min-width: ${breakpoints.xl}) {
-        grid-template-columns: 1.8fr 1fr;
+        grid-template-columns: 2.2fr 1fr;
     }
 `;
 
@@ -101,7 +102,7 @@ export const HeaderTextContainer = styled.div`
 export const ImageContainer = styled.div`
     display: block;
     width: 80%;
-    border: 1px solid #BCBECD;
+    box-shadow: 0 0 50px 10px black;
 
     @media (min-width: ${breakpoints.lg}) {
         grid-area: image;

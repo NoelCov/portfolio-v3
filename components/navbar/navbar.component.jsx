@@ -36,6 +36,9 @@ const NavbarComponent = () => {
                 <Link href="/projects" passHref>
                     <a onClick={onClick}>PROJECTS</a>
                 </Link>
+                <Link href="/blogs" passHref>
+                    <a onClick={onClick}>BLOG</a>
+                </Link>
                 <Link href="/contact" passHref>
                     <a onClick={onClick}>CONTACT</a>
                 </Link>
