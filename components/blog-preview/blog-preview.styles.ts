@@ -16,7 +16,7 @@ export const BlogPreviewContainer = styled.div`
     border-radius: 0.5rem;
     gap: 1.2rem;
     margin-bottom: 4rem;
-    box-shadow: 0 0 20px 1px black;
+    box-shadow: 0 0 10px 1px black;
 
 
     @media (min-width: ${breakpoints.md}){

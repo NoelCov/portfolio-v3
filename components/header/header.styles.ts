@@ -8,10 +8,9 @@ export const HeaderContainer = styled.div`
     gap: 50px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 
     @media (min-width: ${breakpoints.xs}) {
-        width: 80%;
     }
 
     @media (min-width: ${breakpoints.lg}) {
@@ -32,13 +31,12 @@ export const HeaderContainer = styled.div`
 
 export const HeaderTitleContainer = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     font-family: "Josefin Sans", sans-serif;
     gap: 5px;
 
     @media (min-width: ${breakpoints.lg}) {
-        align-items: flex-start;
         gap: 0;
     }
 `;
@@ -102,11 +100,12 @@ export const HeaderTextContainer = styled.div`
 export const ImageContainer = styled.div`
     display: block;
     width: 80%;
-    box-shadow: 0 0 50px 10px black;
+    box-shadow: 0 0 20px 2px black;
 
     @media (min-width: ${breakpoints.lg}) {
         grid-area: image;
         width: 100%;
+        box-shadow: 0 0 50px 10px black;
         margin-right: auto;
     }
 `;
