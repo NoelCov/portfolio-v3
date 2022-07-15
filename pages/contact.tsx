@@ -14,20 +14,21 @@ const ContactPage: NextPage = () => (
                 name="viewport"
                 content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
+            <meta name="author" content="Noel Codes" />
             <meta
                 name="description"
-                content="I've been around computers my whole life but never did any programming with them. Once I did, everything changed for me. I want to solve problems using my skills as a programmer."
+                content="Noel Codes contact form to get in touch with him"
             />
             <meta
                 name="og:description"
-                content="Since I discovered programming all I want to do is solve problems using my skills."
+                content="Noel Codes contact form to get in touch with him"
             />
             <meta name="og:image" content={LandingImage.src} />
             <meta name="twitter:url" content="https://noelcodes.dev/contact" />
             <meta name="twitter:title" content="Noel Codes | Contact" />
             <meta
                 name="twitter:description"
-                content="Since I discovered programming all I want to do is solve problems using my skills."
+                content="Noel Codes contact form to get in touch with him"
             />
             <meta name="twitter:image" content={LandingImage.src} />
             <html lang="en-us" />

@@ -14,21 +14,21 @@ const Home: NextPage = () => (
                 name="viewport"
                 content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
+            <meta name="author" content="Noel Codes" />
             <meta
                 name="description"
-                content="I've been around computers my whole life but never did any programming with them.
-      Once I did, everything changed for me. I want to solve problems using my skills as a programmer."
+                content="Noel Codes, Software Engineer. I like to build things and learn new things. Constantly improving"
             />
             <meta
                 name="og:description"
-                content="Since I discovered programming all I want to do is solve problems using my skills."
+                content="Noel Codes, Software Engineer. I like to build things and learn new things. Constantly improving"
             />
             <meta name="og:image" content={LandingImage.src} />
             <meta name="twitter:url" content="https://noelcodes.dev/" />
             <meta name="twitter:title" content="Noel Codes | Home Page" />
             <meta
                 name="twitter:description"
-                content="Since I discovered programming all I want to do is solve problems using my skills."
+                content="Noel Codes, Software Engineer. I like to build things and learn new things. Constantly improving"
             />
             <meta name="twitter:image" content={LandingImage.src} />
             <html lang="en-us" />

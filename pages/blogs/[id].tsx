@@ -1,10 +1,12 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 
 import LayoutComponent from "../../components/layout/layout.component";
+import BlogComponent from "../../components/blog/blog.component";
 
 import { getAllPostsIds, getPostData } from "../../utils/posts";
 
-import BlogComponent from "../../components/blog/blog.component";
+import LandingImage from "../../public/images/goupandneverstop.jpg";
 
 const BlogPage = ({
     postData,
@@ -13,16 +15,42 @@ const BlogPage = ({
         title: string;
         date: string;
         contentHtml: string;
+        summary: string;
     };
 }) => {
     return (
-        <LayoutComponent>
-            <BlogComponent
-                title={postData.title}
-                content={postData.contentHtml}
-                date={postData.date}
-            />
-        </LayoutComponent>
+        <>
+            <Head>
+                <title>{`Noel Codes | ${postData.title}`}</title>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                />
+                <meta name="author" content="Noel Codes" />
+                <meta name="description" content={`${postData.summary}`} />
+                <meta name="og:description" content={`${postData.summary}`} />
+                <meta name="og:image" content={LandingImage.src} />
+                <meta
+                    name="twitter:url"
+                    content="https://noelcodes.dev/blogs"
+                />
+                <meta name={`twitter:title ${postData.title}`} />
+                <meta
+                    name="twitter:description"
+                    content={`${postData.summary}`}
+                />
+                <meta name="twitter:image" content={LandingImage.src} />
+                <html lang="en-us" />
+            </Head>
+
+            <LayoutComponent>
+                <BlogComponent
+                    title={postData.title}
+                    content={postData.contentHtml}
+                    date={postData.date}
+                />
+            </LayoutComponent>
+        </>
     );
 };
 

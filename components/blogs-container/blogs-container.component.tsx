@@ -13,7 +13,7 @@ const BlogsContainerComponent = ({
     blogs,
 }: BlogsContainerProps): JSX.Element => (
     <BlogsContainer>
-        <SectionTitle>BLOGS</SectionTitle>
+        <SectionTitle>BLOG</SectionTitle>
         {blogs.map(({ id, date, title, summary }) => {
             return (
                 <BlogComponent
