@@ -40,6 +40,7 @@ const BlogPage = ({
                     content={`${postData.summary}`}
                 />
                 <meta name="twitter:image" content={LandingImage.src} />
+                <base target="_blank" />
                 <html lang="en-us" />
             </Head>
 

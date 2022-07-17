@@ -65,5 +65,4 @@ export const ContentContainer = styled.div`
         margin-bottom: 1.5rem;
         font-size: 1.3rem;
         line-height: 2rem;
-    }
-`;
+    }`;
