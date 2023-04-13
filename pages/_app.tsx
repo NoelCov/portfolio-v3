@@ -7,78 +7,81 @@ import Footer from "../components/footer/footer.component";
 
 import { breakpoints } from "../utils/breakpoints";
 
-const GlobalStyle = createGlobalStyle`
-html,
-body {
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  font-family: 'Nunito Sans', sans-serif;
-  color: #BCBECD;
-}
+import "../styles/global.css";
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
+// const GlobalStyle = createGlobalStyle`
 
-p {
-  margin: 0;
-  font-size: 1.1rem;
+// html,
+// body {
+//   width: 100vw;
+//   padding: 0;
+//   margin: 0;
+//   overflow-x: hidden;
+//   font-family: 'Nunito Sans', sans-serif;
+//   color: #BCBECD;
+// }
 
-  @media (min-width: ${breakpoints.sm}) {
-        font-size: 1.2rem;
-    }
+// h1, h2, h3, h4, h5, h6 {
+//   margin: 0;
+// }
 
-    @media (min-width: ${breakpoints.md}) {
-        font-size: 1.3rem;
-    }
+// p {
+//   margin: 0;
+//   font-size: 1.1rem;
 
-  @media (min-width: ${breakpoints.lg}) {
-    font-size: 1.4rem;
-  }
-}
+//   @media (min-width: ${breakpoints.sm}) {
+//         font-size: 1.2rem;
+//     }
 
-li {
-  @media (min-width: ${breakpoints.lg}) {
-    font-size: 1.3rem;
-  }
-}
+//     @media (min-width: ${breakpoints.md}) {
+//         font-size: 1.3rem;
+//     }
 
-a {
-    color: inherit;
-    color: #B18C19;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   @media (min-width: ${breakpoints.lg}) {
+//     font-size: 1.4rem;
+//   }
+// }
 
-    :hover {
-        color: #BCBECD;
-      }
-}
+// li {
+//   @media (min-width: ${breakpoints.lg}) {
+//     font-size: 1.3rem;
+//   }
+// }
 
-* {
-  box-sizing: border-box;
-}
+// a {
+//     color: inherit;
+//     color: #B18C19;
+//     text-decoration: none;
+//     font-size: 1rem;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-input {
-  font-family: 'Nunito Sans', sans-serif;
-  color: white;
+//     :hover {
+//         color: #BCBECD;
+//       }
+// }
 
-  ::placeholder {
-    color: white;
-    opacity: 1;
-  }
-}
+// * {
+//   box-sizing: border-box;
+// }
 
-input:-webkit-autofill {
-  -webkit-text-fill-color: #161923 !important;
-}
-`;
+// input {
+//   font-family: 'Nunito Sans', sans-serif;
+//   color: white;
+
+//   ::placeholder {
+//     color: white;
+//     opacity: 1;
+//   }
+// }
+
+// input:-webkit-autofill {
+//   -webkit-text-fill-color: #161923 !important;
+// }
+// `;
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
     <>
-        <GlobalStyle />
+        {/* <GlobalStyle /> */}
         <Navbar />
         <Component {...pageProps} />
         <Footer />

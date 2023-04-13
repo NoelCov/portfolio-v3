@@ -20,15 +20,18 @@ const NavbarComponent = () => {
     NavbarComponent.handleClickOutside = () => toggleHidden(true);
 
     return (
-        <NavbarContainer>
+        <nav className="w-100 flex justify-between items-center bg-neutral-200 py-4 px-5">
             <Link href="/">
-                <NavbarTitle>NOEL CODES</NavbarTitle>
+                <p className="text-xl">NOEL CODES</p>
             </Link>
-            <NavbarMobileMenu onClick={onClick}>
-                <NavbarMobileLines />
-                <NavbarMobileLines />
-                <NavbarMobileLines />
-            </NavbarMobileMenu>
+            <div
+                className="flex flex-col items-center z-3 gap-1.5"
+                onClick={onClick}
+            >
+                <span className="w-9 bg-black h-0.5 rounded-full"></span>
+                <span className="w-9 bg-black h-0.5 rounded-full"></span>
+                <span className="w-9 bg-black h-0.5 rounded-full"></span>
+            </div>
             <NavbarLinksContainer hidden={hidden}>
                 <Link href="/" passHref>
                     <a onClick={onClick}>HOME</a>
@@ -43,7 +46,7 @@ const NavbarComponent = () => {
                     <a onClick={onClick}>CONTACT</a>
                 </Link>
             </NavbarLinksContainer>
-        </NavbarContainer>
+        </nav>
     );
 };
 
