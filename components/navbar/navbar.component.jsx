@@ -13,7 +13,7 @@ const NavbarComponent = () => {
 
     //TODO update this to have an icon (navbar title)
     return (
-        <nav className="w-100 flex justify-between items-center bg-backgroundColor p-5">
+        <nav className="w-100 flex justify-between items-center bg-backgroundColor p-5 md:p-8">
             <Link href="/" passHref>
                 <p className="text-xl md:text-2xl lg:text-3xl text-black cursor-pointer ">
                     NOEL CODES
@@ -28,9 +28,9 @@ const NavbarComponent = () => {
                 <span className="w-10 bg-black h-0.5 rounded-full"></span>
             </div>
             <div
-                className={`flex flex-col md:flex-row h-screen md:h-auto w-80 justify-center items-center fixed md:static top-0 ${
+                className={`flex flex-col md:flex-row h-screen md:h-auto w-80 md:w-auto justify-center items-center fixed md:static top-0 ${
                     hidden ? "-right-96" : "right-0"
-                } md:right-0 z-20 gap-20 md:gap-6 bg-darkerBackgroundColor md:bg-backgroundColor drop-shadow-2xl md:drop-shadow-none transition-right duration-300 ease-in-out`}
+                } md:right-0 z-20 gap-20 md:gap-7 bg-darkerBackgroundColor md:bg-backgroundColor shadow-xl shadow-black md:shadow-none md:drop-shadow-none transition-right duration-300 ease-in-out`}
             >
                 <Link href="/" passHref>
                     <a
