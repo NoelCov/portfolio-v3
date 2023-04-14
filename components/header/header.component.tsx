@@ -7,23 +7,23 @@ import Link from "next/link";
 
 const HeaderComponent = () => {
     return (
-        <div className="block lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-center">
-            <div className="flex flex-col text-black gap-10 lg:gap-14 items-start">
+        <div className="block lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-center 2xl:max-w-screen-2xl">
+            <div className="flex flex-col text-black gap-10 xl:gap-14 items-start">
                 <div>
-                    <p className="text-xl md:text-2xl lg:text-3xl">
+                    <p className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
                         {"Hello, I'm"}
                     </p>
-                    <h1 className="text-4xl lg:text-6xl text-secondaryColor">
+                    <h1 className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-secondaryColor">
                         Noel Covarrubias
                     </h1>
-                    <p className="text-2xl lg:text-3xl xl:text-4xl inline">
+                    <p className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl inline">
                         {"and I'm a "}
                     </p>
-                    <p className="inline text-2xl lg:text-3xl xl:text-4xl border-b-2 border-primaryColor">
+                    <p className="inline text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl border-b-2 border-primaryColor">
                         Software Engineer.
                     </p>
                 </div>
-                <div className="md:w-2/3 lg:w-full xl:w-2/3">
+                <div className="md:w-2/3 lg:w-full xl:w-2/3 2xl:text-xl 2xl:w-4/5">
                     {"I’m a self-taught Software Engineer based in California. I have an interest in full-stack software development, " +
                         "artificial intelligence and robotics. I have over a year of professional work experience. Besides programming, I also enjoy to listen to music, play video games, read and to work out."}
                 </div>
@@ -33,13 +33,14 @@ const HeaderComponent = () => {
                     </div>
                 </Link>
             </div>
-            <div className="hidden lg:block lg:relative lg:col-start-2 w-4/5 xl:w-4/5 2xl:w-3/5">
+            <div className="hidden lg:block lg:relative lg:col-start-2 w-4/5 xl:w-4/5 2xl:w-4/5">
                 <div className="relative pb-[100%] shadow-lg shadow-accentColor">
                     <Image
                         className="rounded"
                         src={pic}
                         layout="fill"
                         alt="Noel Covarrubias profile"
+                        priority={true}
                     />
                 </div>
             </div>
