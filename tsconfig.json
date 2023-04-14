@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/styles/*": ["styles/*"]
+      "@/components/*": ["./components/*"],
+      "@/styles/*": ["./styles/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
