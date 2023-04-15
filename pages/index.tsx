@@ -35,6 +35,11 @@ const Home: NextPage = () => (
         </Head>
         <Layout>
             <Header />
+            {/* Work experience section start */}
+            {/* <div className="flex flex-col items-start">
+                <h2>Work Experience</h2>
+                <p>Hello</p>
+            </div> */}
         </Layout>
     </>
 );
