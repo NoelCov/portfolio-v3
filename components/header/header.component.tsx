@@ -13,13 +13,13 @@ const HeaderComponent = () => {
                     <p className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
                         {"Hello, I'm"}
                     </p>
-                    <h1 className="text-4xl lg:text-5xl 2xl:text-7xl text-primaryColor">
+                    <h1 className="text-4xl lg:text-5xl 2xl:text-7xl text-primaryColor font-bold">
                         Noel Covarrubias
                     </h1>
                     <p className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl inline">
                         {"and I'm a "}
                     </p>
-                    <p className="inline text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl border-b-2 border-accentColor">
+                    <p className="inline text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl border-b-2 border-accentColor font-bold">
                         Software Engineer.
                     </p>
                 </div>
