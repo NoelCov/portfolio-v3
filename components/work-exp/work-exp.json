@@ -1,0 +1,30 @@
+[    
+    {
+    "title": "Software Engineer @ Clover",
+    "company": "Clover",
+    "dates": "October 2022 - Present",
+    "experience": [
+        "- Implemented panels and dashboards to present information like failed requests, log messages and latency which resulted in reduction of time spent searching logs by 20% using Grafana.",
+        "- Designed and implemented a self-documented REST API which resulted in an increase of speed in testing the codebase using java, spring boot and open api.",
+        "- Optimized a microservice’s daily upload of millions of events such as successful/unsuccessful logins, downtime and other important data by 15% using spring boot and data jpa. "
+    ]
+    },
+    {
+        "title": "Software Engineer Apprentice @ Microsoft",
+        "company": "Microsoft",
+        "dates": "February 2022 - June 2022",
+        "experience": [
+            "- Implemented authentication and authorization to an asp.net core 5 api which resulted in an increase in the security of it using JWT tokens and session.",
+            "- Implemented telemetry to an application that resulted in making logs and metrics thatdisplayed downtimes, latency, failed responses and others available using internal libraries."
+
+        ]
+    },
+    {
+        "title": "Web Developer Volunteer @ Catchafire",
+        "company": "Catchafire",
+        "dates": "July 2021 - January 2022.",
+        "experience": [
+            "- Developed and designed websites for nonprofits businesses that resulted in saving them over $15,000 by using HTML, CSS, JavaScript and WordPress."
+        ]
+    }
+]
