@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -7,11 +8,6 @@ import Header from "../components/header/header.component";
 import { WorkExp } from "../components/work-exp/work-exp.component";
 
 import LandingImage from "../public/images/linkedin.jpg";
-
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 
 const Home: NextPage = () => {
     return (

@@ -7,7 +7,7 @@ import pic from "../../public/images/hero.png";
 
 const HeaderComponent = () => {
     return (
-        <div className="block lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-center 2xl:max-w-screen-2xl">
+        <div className="block lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-center 2xl:max-w-screen-2xl 2xl:mb-40">
             <div className="flex flex-col text-black gap-10 xl:gap-12 2xl:gap-14 items-start">
                 <div>
                     <p className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">

@@ -15,18 +15,18 @@ export const WorkExp = () => {
     };
 
     return (
-        <div className="flex flex-col my-20 pb-20 w-full 2xl:max-w-screen-2xl">
+        <div className="flex flex-col my-20 w-full 2xl:max-w-screen-2xl">
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-10 text-primaryColor font-bold">
                 Work Experience
             </h2>
-            <div className="lg:flex lg:gap-20 relative">
+            <div className="md:flex md:gap-8 lg:gap-10 relative">
                 <Tabs
                     orientation="vertical"
                     variant="fullWidth"
                     value={value}
                     onChange={handleChange}
                     aria-label="Work experience"
-                    className="lg:w-1/3 2xl:w-48 relative"
+                    className="md:w-36 xl:min-w-36 2xl:w-48 relative"
                 >
                     {data.map((obj, idx) => {
                         return (
@@ -34,7 +34,7 @@ export const WorkExp = () => {
                                 key={idx}
                                 label={obj.company}
                                 {...a11yProps(idx)}
-                                className="flex items-start font-sans"
+                                className="flex items-start"
                             />
                         );
                     })}
@@ -42,14 +42,14 @@ export const WorkExp = () => {
                 {data.map((obj, idx) => {
                     return (
                         <TabPanel key={idx} value={value} index={idx}>
-                            <div className="flex flex-col gap-2 2xl:w-3/5 font-sans">
-                                <p className="text-xl text-primaryColor">
+                            <div className="flex flex-col gap-2 md:w-96 xl:w-3/4 2xl:w-3/5">
+                                <p className="text-xl lg:text-2xl text-primaryColor font-bold">
                                     {obj.title}
                                 </p>
-                                <p className="text-lighterBlack text-sm">
+                                <p className="text-lighterBlack text-sm lg:text-base">
                                     {obj.dates}
                                 </p>
-                                <div className="flex flex-col gap-4 text-lighterBlack 2xl:h-64">
+                                <div className="flex flex-col mt-4 gap-4 lg:text-lg text-lighterBlack md:h-72 lg:h-80 2xl:h-64">
                                     {obj.experience.map((exp, expIdx) => {
                                         return <p key={expIdx}>{exp}</p>;
                                     })}
@@ -85,7 +85,7 @@ function TabPanel(props: TabPanelProps) {
             id={`vertical-tabpanel-${index}`}
             aria-labelledby={`vertical-tab-${index}`}
             {...other}
-            className="my-6 lg:my-0"
+            className="my-6 md:my-0 xl:w-full"
         >
             {value === index && (
                 <Box p={3}>
