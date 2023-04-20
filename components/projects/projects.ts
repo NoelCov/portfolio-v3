@@ -17,7 +17,7 @@ export const projectsArray : IProject[] = [
       "I created this website for a physical therapy clinic in Mexico. They wanted a website that could attract new customers and could show them what they do at the clinic. They wanted to gain trust to bring new customers in. To achieve that I created a clean design and made sure the website has good SEO.",
     projectTitle: "Alpha Fisioterapia",
     websiteURL: "https://www.alphafisioterapia.com/",
-    toolsUsed: ["Next JS", "Styled Components", "Vercel", "VS Code"],
+    toolsUsed: ["Next JS", "Styled Components", "Vercel"],
   },
   {
     imageSrc: "/images/projects/PricesComparison.png",
@@ -30,7 +30,6 @@ export const projectsArray : IProject[] = [
       "React JS",
       "Styled Components",
       "Vercel",
-      "VS Code",
       "Auth0 API",
     ],
   },

@@ -15,11 +15,11 @@ export const WorkExp = () => {
     };
 
     return (
-        <div className="flex flex-col my-20 w-full 2xl:max-w-screen-2xl">
+        <div className="flex flex-col my-20 md:my-0 md:mt-20 w-full 2xl:max-w-screen-2xl">
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-10 text-primaryColor font-bold">
                 Work Experience
             </h2>
-            <div className="md:flex md:gap-8 lg:gap-10 relative">
+            <div className="md:flex md:gap-8 lg:gap-10 relative font-sans">
                 <Tabs
                     orientation="vertical"
                     variant="fullWidth"
@@ -46,10 +46,10 @@ export const WorkExp = () => {
                                 <p className="text-xl lg:text-2xl text-primaryColor font-bold">
                                     {obj.title}
                                 </p>
-                                <p className="text-lighterBlack text-sm lg:text-base">
+                                <p className="text-lighterBlack text-sm xl:text-base">
                                     {obj.dates}
                                 </p>
-                                <div className="flex flex-col mt-4 gap-4 lg:text-lg text-lighterBlack md:h-72 lg:h-80 2xl:h-64">
+                                <div className="flex flex-col mt-4 gap-4 xl:text-lg text-lighterBlack md:h-72 lg:h-80 2xl:h-64">
                                     {obj.experience.map((exp, expIdx) => {
                                         return <p key={expIdx}>{exp}</p>;
                                     })}

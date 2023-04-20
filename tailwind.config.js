@@ -7,14 +7,17 @@ module.exports = {
     theme: {
         extend: {},
         colors: {
-            primaryColor: "#0B77DB",
-            accentColor: "#FC7940",
-            accentColorShade: "#FF9466",
+            primaryColor: "#009DDC",
+            accentColor: "#FAA916",
+            accentColorShade: "#DC9104",
             black: "#333333",
             lighterBlack: "#525252",
             white: "#FFFFFF",
-            backgroundColor: "#F7FAFC",
+            backgroundColor: "#FBFFFE",
             backgroundColorShade: "#FBFDFE",
+        },
+        fontFamily: {
+            sans: ["lato", "ui-sans-serif"],
         },
     },
     plugins: [],
