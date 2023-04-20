@@ -15,7 +15,10 @@ export const WorkExp = () => {
     };
 
     return (
-        <div className="flex flex-col my-20 md:my-0 md:mt-20 w-full 2xl:max-w-screen-2xl">
+        <div
+            id="experience"
+            className="flex flex-col my-20 py-10 md:my-0 md:mt-20 w-full 2xl:max-w-screen-2xl"
+        >
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-10 text-primaryColor font-bold">
                 Work Experience
             </h2>

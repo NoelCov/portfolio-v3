@@ -12,6 +12,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <ThemeProvider theme={theme}>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
     </ThemeProvider>
 );
 

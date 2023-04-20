@@ -5,7 +5,7 @@ import { projectsArray } from "./projects";
 import ProjectContainer from "../project/project.component";
 
 const Projects = (): JSX.Element => (
-    <div>
+    <div id="projects" className="py-10">
         <h2 className="text-2xl lg:text-4xl mb-8 lg:mb-10 text-primaryColor font-bold">
             Projects
         </h2>

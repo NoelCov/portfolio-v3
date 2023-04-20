@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import Image from "next/image";
+
 import emailjs from "emailjs-com";
 
 import {
@@ -13,7 +15,6 @@ import {
 
 import SectionTitle from "../../utils/section-title.component";
 import Button from "../button/button.component";
-import ImageContainerComponent from "../image-container/image-container.component";
 import Inputcomponent, {
     formOptions,
 } from "./input-container/input-container.component";
@@ -49,7 +50,7 @@ const ContactPage = () => {
             {successMessage ? (
                 <>
                     <SectionTitle>{"Message sent succesfully! ☺"}</SectionTitle>
-                    <ImageContainerComponent
+                    <Image
                         alt="success message"
                         src="/images/thankyou-message.jpg"
                         width={4829}

@@ -40,12 +40,20 @@ const NavbarComponent = () => {
                         Home
                     </a>
                 </Link>
-                <Link href="/projects" passHref>
+                <Link href="/#projects" passHref>
                     <a
                         className="md:hover:text-accentColorShade transition duration-300 ease-out"
                         onClick={onClick}
                     >
                         Projects
+                    </a>
+                </Link>
+                <Link href="/#experience" passHref>
+                    <a
+                        className="md:hover:text-accentColorShade transition duration-300 ease-out"
+                        onClick={onClick}
+                    >
+                        Work Experience
                     </a>
                 </Link>
                 <Link href="/blog" passHref>
