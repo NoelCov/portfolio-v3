@@ -6,6 +6,7 @@ import Head from "next/head";
 import Layout from "../components/layout/layout.component";
 import Header from "../components/header/header.component";
 import { WorkExp } from "../components/work-exp/work-exp.component";
+import Projects from "../components/projects/projects.component";
 
 import LandingImage from "../public/images/linkedin.jpg";
 
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
             <Layout>
                 <Header />
                 <WorkExp />
+                <Projects />
             </Layout>
         </>
     );

@@ -1,4 +1,4 @@
-import { Separator } from "../project-container/project-container.styles";
+import { Separator } from "../project/project-container.styles";
 import {
     InformationContainer,
     ContentContainer,

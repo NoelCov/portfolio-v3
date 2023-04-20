@@ -14,7 +14,7 @@ module.exports = {
             lighterBlack: "#525252",
             white: "#FFFFFF",
             backgroundColor: "#F7FAFC",
-            backgroundColorShade: "#ECF2F9",
+            backgroundColorShade: "#FBFDFE",
         },
     },
     plugins: [],
