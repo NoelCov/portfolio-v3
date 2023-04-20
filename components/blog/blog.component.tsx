@@ -1,4 +1,3 @@
-import { Separator } from "../project/project-container.styles";
 import {
     InformationContainer,
     ContentContainer,
@@ -19,7 +18,6 @@ const BlogComponent = ({ title, date, content }: BlogProps): JSX.Element => {
             <InformationContainer>
                 <BlogTitle>{title}</BlogTitle>
                 <Date>{date}</Date>
-                <Separator />
             </InformationContainer>
             <ContentContainer dangerouslySetInnerHTML={{ __html: content }} />
         </ArticleContainer>
