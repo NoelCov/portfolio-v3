@@ -28,11 +28,11 @@ const NavbarComponent = () => {
                 <span className="w-10 bg-black h-0.5 rounded-full"></span>
             </div>
             <div
-                className={`flex flex-col lg:flex-row text-black h-screen w-80 justify-center items-center fixed top-0 ${
-                    hidden ? "-right-3/4" : "right-0"
-                } 
+                className={`flex flex-col lg:flex-row text-black h-screen w-80 justify-center items-center fixed top-0 
                 z-20 gap-20 bg-lightGray shadow-2xl shadow-black transition-right duration-300 ease-in-out 
-                md:w-2/3 lg:gap-7 lg:bg-backgroundColor lg:right-0 lg:shadow-none lg:h-auto lg:w-auto lg:static`}
+                md:w-2/3 lg:gap-7 lg:bg-backgroundColor lg:right-0 lg:shadow-none lg:h-auto lg:w-auto lg:static ${
+                    hidden ? "-right-80 md:-right-2/3" : "right-0"
+                }`}
             >
                 <Link href="/" passHref>
                     <a

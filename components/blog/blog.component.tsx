@@ -14,6 +14,10 @@ interface BlogProps {
 
 const BlogComponent = ({ title, date, content }: BlogProps): JSX.Element => {
     return (
+        // <section className="mt-40 flex flex-col gap-4 bg-lightGray">
+        //     <p className="text-xl text-black">{title}</p>
+        //     <p className="text-sm">{date}</p>
+        // </section>
         <ArticleContainer>
             <InformationContainer>
                 <BlogTitle>{title}</BlogTitle>
