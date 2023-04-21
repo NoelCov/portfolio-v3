@@ -1,5 +1,7 @@
 import React from "react";
 
+import Link from "next/link";
+
 interface BlogProps {
     date: string;
     title: string;
@@ -19,12 +21,14 @@ const BlogComponent = ({
             <p className="text-sm">{date}</p>
 
             <p>{summary}</p>
-            <div
-                className="rounded-md cursor-pointer bg-accentColor w-48 lg:w-64 py-2 text-center hover:bg-accentColorShade
+            <Link href={`/blogs/${id}`} passHref>
+                <div
+                    className="rounded-md cursor-pointer bg-accentColor w-48 lg:w-64 py-2 text-center hover:bg-accentColorShade
             transition duration-300 ease-in-out shadow shadow-gray text-black"
-            >
-                Read more
-            </div>
+                >
+                    Read more
+                </div>
+            </Link>
         </div>
     );
 };

@@ -1,10 +1,4 @@
-import {
-    InformationContainer,
-    ContentContainer,
-    BlogTitle,
-    Date,
-    ArticleContainer,
-} from "./blog.styles";
+import styles from "./blog-styles.module.css";
 
 interface BlogProps {
     title: string;
@@ -14,17 +8,16 @@ interface BlogProps {
 
 const BlogComponent = ({ title, date, content }: BlogProps): JSX.Element => {
     return (
-        // <section className="mt-40 flex flex-col gap-4 bg-lightGray">
-        //     <p className="text-xl text-black">{title}</p>
-        //     <p className="text-sm">{date}</p>
-        // </section>
-        <ArticleContainer>
-            <InformationContainer>
-                <BlogTitle>{title}</BlogTitle>
-                <Date>{date}</Date>
-            </InformationContainer>
-            <ContentContainer dangerouslySetInnerHTML={{ __html: content }} />
-        </ArticleContainer>
+        <section className="mt-20 lg:mt-40 flex flex-col gap-8 lg:w-3/5 mx-auto">
+            <p className="text-2xl lg:text-4xl text-primaryColor font-bold">
+                {title}
+            </p>
+            <p className="text-gray">{date}</p>
+            <div
+                className="default-class"
+                dangerouslySetInnerHTML={{ __html: content }}
+            />
+        </section>
     );
 };
 

@@ -58,14 +58,14 @@ const NavbarComponent = () => {
                         Work experience
                     </a>
                 </Link>
-                <Link href="/blog" passHref>
+                {/* <Link href="/blog" passHref>
                     <a
                         className="md:hover:text-accentColorShade transition duration-300 ease-out"
                         onClick={onClick}
                     >
                         Blog
                     </a>
-                </Link>
+                </Link> */}
                 <Link href="/contact" passHref>
                     <a
                         className="md:hover:text-accentColorShade transition duration-300 ease-out"
