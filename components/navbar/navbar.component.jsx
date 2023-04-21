@@ -20,7 +20,7 @@ const NavbarComponent = () => {
                 </p>
             </Link>
             <div
-                className="flex md:hidden flex-col items-center z-30 gap-1.5"
+                className="flex lg:hidden flex-col items-center z-30 gap-1.5"
                 onClick={onClick}
             >
                 <span className="w-10 bg-black h-0.5 rounded-full"></span>
@@ -28,9 +28,11 @@ const NavbarComponent = () => {
                 <span className="w-10 bg-black h-0.5 rounded-full"></span>
             </div>
             <div
-                className={`flex flex-col md:flex-row text-black h-screen md:h-auto w-80 md:w-auto justify-center items-center fixed md:static top-0 ${
-                    hidden ? "-right-96" : "right-0"
-                } md:right-0 z-20 gap-20 md:gap-7 bg-backgroundColorShade md:bg-backgroundColor shadow-2xl shadow-black md:shadow-none md:drop-shadow-none transition-right duration-300 ease-in-out`}
+                className={`flex flex-col lg:flex-row text-black h-screen w-80 justify-center items-center fixed top-0 ${
+                    hidden ? "-right-3/4" : "right-0"
+                } 
+                z-20 gap-20 bg-lightGray shadow-2xl shadow-black transition-right duration-300 ease-in-out 
+                md:w-2/3 lg:gap-7 lg:bg-backgroundColor lg:right-0 lg:shadow-none lg:h-auto lg:w-auto lg:static`}
             >
                 <Link href="/" passHref>
                     <a

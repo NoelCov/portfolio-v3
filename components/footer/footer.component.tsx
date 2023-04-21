@@ -6,7 +6,7 @@ import { AiOutlineLinkedin } from "@react-icons/all-files/ai/AiOutlineLinkedin";
 
 const FooterComponent = (): JSX.Element => {
     return (
-        <div className="w-screen py-10 px-4 mt-20 lg:mt-40 bg-accentColor flex flex-col items-center gap-8">
+        <footer className="w-screen py-10 flex flex-col px-4 mt-20 lg:mt-40 bg-accentColor items-center gap-8 lg:flex-row lg:place-content-between lg:p-16">
             <p className="text-sm">
                 {'Built and desgined by Noel "Codes" Covarrubias'}
             </p>
@@ -33,7 +33,7 @@ const FooterComponent = (): JSX.Element => {
                     <AiOutlineTwitter />
                 </a>
             </div>
-        </div>
+        </footer>
     );
 };
 

@@ -5,7 +5,10 @@ interface layoutProps {
 }
 
 const LayoutComponent = ({ children }: layoutProps): JSX.Element => (
-    <div className="px-8 md:px-20 lg:px-24 xl:px-40 flex flex-col xl:items-center">
+    <div
+        id="layout"
+        className="px-8 md:px-20 lg:px-24 xl:px-40 2xl:max-w-screen-xl 2xl:px-0 2xl:mx-auto"
+    >
         {children}
     </div>
 );

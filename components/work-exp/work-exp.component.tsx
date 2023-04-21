@@ -17,7 +17,7 @@ export const WorkExp = () => {
     return (
         <section
             id="experience"
-            className="flex flex-col mt-20 lg:mt-0 pt-10 w-full 2xl:max-w-screen-2xl"
+            className="flex flex-col mt-20 lg:mt-0 pt-10 w-full"
         >
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-10 text-primaryColor font-bold">
                 Work Experience
