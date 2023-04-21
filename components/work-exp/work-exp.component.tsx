@@ -15,9 +15,9 @@ export const WorkExp = () => {
     };
 
     return (
-        <div
+        <section
             id="experience"
-            className="flex flex-col my-20 py-10 md:my-0 md:mt-20 w-full 2xl:max-w-screen-2xl"
+            className="flex flex-col mt-20 lg:mt-0 pt-10 w-full 2xl:max-w-screen-2xl"
         >
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-10 text-primaryColor font-bold">
                 Work Experience
@@ -46,13 +46,13 @@ export const WorkExp = () => {
                     return (
                         <TabPanel key={idx} value={value} index={idx}>
                             <div className="flex flex-col gap-2 md:w-96 xl:w-3/4 2xl:w-3/5">
-                                <p className="text-xl lg:text-2xl text-primaryColor font-bold">
+                                <p className="text-xl lg:text-2xl text-black font-bold">
                                     {obj.title}
                                 </p>
-                                <p className="text-lighterBlack text-sm xl:text-base">
+                                <p className="text-gray text-sm xl:text-base">
                                     {obj.dates}
                                 </p>
-                                <div className="flex flex-col mt-4 gap-4 xl:text-lg text-lighterBlack md:h-72 lg:h-80 2xl:h-64">
+                                <div className="flex flex-col mt-4 gap-4 xl:text-lg text-gray md:h-72 lg:h-80 2xl:h-64">
                                     {obj.experience.map((exp, expIdx) => {
                                         return <p key={expIdx}>{exp}</p>;
                                     })}
@@ -62,7 +62,7 @@ export const WorkExp = () => {
                     );
                 })}
             </div>
-        </div>
+        </section>
     );
 };
 

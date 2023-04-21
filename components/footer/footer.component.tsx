@@ -6,7 +6,7 @@ import { AiOutlineLinkedin } from "@react-icons/all-files/ai/AiOutlineLinkedin";
 
 const FooterComponent = (): JSX.Element => {
     return (
-        <div className="w-screen py-10 px-4 bg-accentColorShade border-t border-accentColor flex flex-col items-center gap-8">
+        <div className="w-screen py-10 px-4 mt-20 lg:mt-40 bg-accentColor flex flex-col items-center gap-8">
             <p className="text-sm">
                 {'Built and desgined by Noel "Codes" Covarrubias'}
             </p>

@@ -7,14 +7,18 @@ module.exports = {
     theme: {
         extend: {},
         colors: {
-            primaryColor: "#009DDC",
-            accentColor: "#FAA916",
+            //262626 (beautiful black)
+            primaryColor: "#1771f7",
+            accentColor: "#FFCC00",
             accentColorShade: "#DC9104",
-            black: "#333333",
+            black: "#262626",
             lighterBlack: "#525252",
             white: "#FFFFFF",
             backgroundColor: "#FBFFFE",
             backgroundColorShade: "#FBFDFE",
+            gray: "#707070",
+            midGray: "#B8B8B8",
+            lightGray: "#F5F5F5",
         },
         fontFamily: {
             sans: ["lato", "ui-sans-serif"],

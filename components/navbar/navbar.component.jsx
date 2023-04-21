@@ -28,7 +28,7 @@ const NavbarComponent = () => {
                 <span className="w-10 bg-black h-0.5 rounded-full"></span>
             </div>
             <div
-                className={`flex flex-col md:flex-row text-lighterBlack h-screen md:h-auto w-80 md:w-auto justify-center items-center fixed md:static top-0 ${
+                className={`flex flex-col md:flex-row text-black h-screen md:h-auto w-80 md:w-auto justify-center items-center fixed md:static top-0 ${
                     hidden ? "-right-96" : "right-0"
                 } md:right-0 z-20 gap-20 md:gap-7 bg-backgroundColorShade md:bg-backgroundColor shadow-2xl shadow-black md:shadow-none md:drop-shadow-none transition-right duration-300 ease-in-out`}
             >
@@ -53,7 +53,7 @@ const NavbarComponent = () => {
                         className="md:hover:text-accentColorShade transition duration-300 ease-out"
                         onClick={onClick}
                     >
-                        Work Experience
+                        Work experience
                     </a>
                 </Link>
                 <Link href="/blog" passHref>
