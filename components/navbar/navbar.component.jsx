@@ -66,7 +66,7 @@ const NavbarComponent = () => {
                         Blog
                     </a>
                 </Link> */}
-                <Link href="/contact" passHref>
+                <Link href="/#contact" passHref>
                     <a
                         className="md:hover:text-accentColorShade transition duration-300 ease-out"
                         onClick={onClick}
