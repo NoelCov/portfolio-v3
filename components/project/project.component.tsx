@@ -43,9 +43,11 @@ const Project = ({
                     return <p key={key}>- {tool}</p>;
                 })}
             </div>
-            <div className="rounded-md cursor-pointer bg-accentColor w-40 lg:w-64 py-2 text-center hover:bg-accentColorShade transition duration-300 ease-in-out shadow shadow-gray text-black">
-                View project
-            </div>
+            <a href={websiteURL} target="_blank" rel="noopener noreferrer">
+                <div className="rounded-md cursor-pointer bg-accentColor w-40 lg:w-64 py-2 text-center hover:bg-accentColorShade transition duration-300 ease-in-out shadow shadow-gray text-black">
+                    View project
+                </div>
+            </a>
         </div>
     </div>
 );

@@ -29,7 +29,7 @@ const HeaderComponent = () => {
                             {"I’m a self-taught Software Engineer based in California. I have an interest in full-stack software development, " +
                                 "artificial intelligence and robotics. I have over a year of professional work experience. Besides programming, I also enjoy to listen to music, play video games, read and to work out."}
                         </div>
-                        <Link href="/contact" passHref>
+                        <Link href="/#contact" passHref>
                             <div className="rounded-md cursor-pointer bg-accentColor w-48 lg:w-64 py-2 text-center hover:bg-accentColorShade transition duration-300 ease-in-out shadow shadow-gray text-black">
                                 CONTACT ME
                             </div>
