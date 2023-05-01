@@ -9,7 +9,7 @@ import { WorkExp } from "../components/work-exp/work-exp.component";
 import Projects from "../components/projects/projects.component";
 import Contact from "../components/contact/contact.component";
 
-import LandingImage from "../public/images/linkedin.jpg";
+import LandingImage from "../public/images/hero.png";
 
 const Home: NextPage = () => {
     return (
