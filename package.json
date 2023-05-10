@@ -23,8 +23,7 @@
     "react-dom": "17.0.2",
     "react-onclickoutside": "^6.12.0",
     "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "styled-components": "^5.3.1"
+    "remark-html": "^15.0.1"
   },
   "devDependencies": {
     "@types/react": "17.0.26",

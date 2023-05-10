@@ -8,7 +8,7 @@ These is the list of tools I use to build it:
 
 - Next.JS
 - React
-- Styled-Components
+- Tailwind
 
 I used this package for the form:
 
