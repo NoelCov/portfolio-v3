@@ -20,15 +20,12 @@ const NavbarComponent = () => {
     }, []);
 
     const handleScroll = () => {
-        console.log(isSticky);
         if (window.scrollY > 0) {
             setIsSticky(true);
         } else {
             setIsSticky(false);
         }
     };
-
-    console.log(isSticky);
 
     //TODO update this to have an icon (navbar title)
     return (
