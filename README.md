@@ -1,7 +1,7 @@
 # Portfolio website - V3
 ## [www.noelcodes.dev](https://www.noelcodes.dev/)
 
-![image](public\images\portfoliopic.png)
+![image](https://raw.githubusercontent.com/NoelCov/portfolio-v3/main/public/images/portfoliopic.png)
 
 ## About
 ----
