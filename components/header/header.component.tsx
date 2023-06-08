@@ -26,7 +26,7 @@ const HeaderComponent = () => {
                             </p>
                         </div>
                         <div className="w-full md:w-2/3 lg:w-full text-gray lg:text-lg xl:w-4/5 2xl:text-xl 2xl:w-4/5">
-                            {"I’m a self-taught Software Engineer based in California. I have an interest in full-stack software development, " +
+                            {"I’m a self-taught Software Engineer based in California. I have a passion for full-stack software development, " +
                                 "artificial intelligence and robotics. I have over a year of professional work experience. Besides programming, I also enjoy to listen to music, play video games, read and to work out."}
                         </div>
                         <Link href="/#contact" passHref>

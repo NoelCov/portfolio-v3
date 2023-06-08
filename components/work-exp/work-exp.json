@@ -1,22 +1,21 @@
-[    
+[
     {
-    "title": "Software Engineer @ Clover",
-    "company": "Clover",
-    "dates": "October 2022 - Present",
-    "experience": [
-        "- Implemented panels and dashboards to present information like failed requests, log messages and latency which resulted in reduction of time spent searching logs by 20% using Grafana.",
-        "- Designed and implemented a self-documented REST API which resulted in an increase of speed in testing the codebase using java, spring boot and open api.",
-        "- Optimized a microservice’s daily upload of millions of events such as successful/unsuccessful logins, downtime and other important data by 15% using spring boot and data jpa. "
-    ]
+        "title": "Software Engineer @ Clover",
+        "company": "Clover",
+        "dates": "October 2022 - April 2023",
+        "experience": [
+            "- Developed Grafana dashboards, showcasing key metrics such as failed requests, log messages, and latency. Leading to a reduction in time spent sifting through logs.",
+            "- Designed and implemented a self-documented REST API which resulted in enhanced testing speed for the codebase using Java, Spring Boot and Open API.",
+            "- Optimized the daily upload process for a high-traffic microservice handling millions of events, including successful/unsuccessful logins, downtime, and other critical data. Leading to significant cost savings for the company. Implemented using Spring Boot and Data JPA."
+        ]
     },
     {
         "title": "Software Engineer Apprentice @ Microsoft",
         "company": "Microsoft",
         "dates": "February 2022 - June 2022",
         "experience": [
-            "- Implemented authentication and authorization to an asp.net core 5 api which resulted in an increase in the security of it using JWT tokens and session.",
-            "- Implemented telemetry to an application that resulted in making logs and metrics thatdisplayed downtimes, latency, failed responses and others available using internal libraries."
-
+            "- Strengthened application security by implementing JWT token-based authentication and authorization for an ASP.NET Core 5 API.",
+            "- Implemented telemetry to an application using internal libraries, enabling comprehensive tracking and visualization of performance metrics, including downtimes, latency, and failed responses."
         ]
     },
     {
@@ -24,7 +23,7 @@
         "company": "Catchafire",
         "dates": "July 2021 - January 2022.",
         "experience": [
-            "- Developed and designed websites for nonprofits businesses that resulted in saving them over $15,000 by using HTML, CSS, JavaScript and WordPress."
+            "- Designed and developed websites for non-profit organizations using HTML, CSS, JavaScript, and WordPress, resulting in cost savings of over $15,000 for these organizations."
         ]
     }
 ]
