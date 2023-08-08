@@ -73,7 +73,7 @@ const NavbarComponent = () => {
                 } ${
                     isSticky
                         ? "bg-black text-white"
-                        : "bg-lightGray text-black lg:bg-backgroundColor"
+                        : "bg-lightGray text-black lg:bg-bgColor"
                 }`}
             >
                 <Link href="/" passHref>
