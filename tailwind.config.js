@@ -18,6 +18,14 @@ module.exports = {
             gray: "#707070",
             midGray: "#B8B8B8",
             lightGray: "#F5F5F5",
+            
+            
+            textColor: "#151414",
+            bgColor: "#fcfdfc",
+            primaryColor: "#1063b7",
+            secondaryColor: "#d1d0d2",
+            accentColor: "#2cbfbf",
+            accentColorShade: "#26A6A6"
         },
         fontFamily: {
             sans: ["lato", "ui-sans-serif"],

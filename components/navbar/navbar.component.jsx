@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import onClickOutside from "react-onclickoutside";
 
 import Link from "next/link";
+import CustomLink from "../custom-link/link.component";
 
 const NavbarComponent = () => {
     const [hidden, toggleHidden] = useState(true);
@@ -27,10 +28,9 @@ const NavbarComponent = () => {
         }
     };
 
-    //TODO update this to have an icon (navbar title)
     return (
         <nav
-            className={`w-100 flex justify-between items-center bg-backgroundColor p-5 md:p-8 2xl:px-14 ${
+            className={`w-100 flex justify-between items-center  p-5 md:p-8 2xl:px-14 ${
                 isSticky
                     ? "fixed top-0 w-full z-30 bg-black opacity-95"
                     : "relative"
@@ -76,51 +76,24 @@ const NavbarComponent = () => {
                         : "bg-lightGray text-black lg:bg-backgroundColor"
                 }`}
             >
-                <Link href="/#header" passHref>
-                    <a
-                        className="md:hover:text-accentColorShade transition duration-300 ease-out"
-                        onClick={onClick}
-                    >
-                        Home
-                    </a>
+                <Link href="/" passHref>
+                    <CustomLink content="Home" onClick={onClick} />
                 </Link>
                 <Link href="/#experience" passHref>
-                    <a
-                        className="md:hover:text-accentColorShade transition duration-300 ease-out"
-                        onClick={onClick}
-                    >
-                        Work experience
-                    </a>
+                <CustomLink content="Work experience" onClick={onClick} />
                 </Link>
                 <Link href="/#projects" passHref>
-                    <a
-                        className="md:hover:text-accentColorShade transition duration-300 ease-out"
-                        onClick={onClick}
-                    >
-                        Projects
-                    </a>
+                    <CustomLink content="Projects" onClick={onClick} />
                 </Link>
-
-                {/* <Link href="/blog" passHref>
-                    <a
-                        className="md:hover:text-accentColorShade transition duration-300 ease-out"
-                        onClick={onClick}
-                    >
-                        Blog
-                    </a>
-                </Link> */}
                 <Link href="/#contact" passHref>
-                    <a
-                        className="md:hover:text-accentColorShade transition duration-300 ease-out"
-                        onClick={onClick}
-                    >
-                        Contact
-                    </a>
+                    <CustomLink content="Contact" onClick={onClick} />
                 </Link>
             </div>
         </nav>
     );
 };
+
+
 
 const clickOutsideConfig = {
     handleClickOutside: () => NavbarComponent.handleClickOutside,

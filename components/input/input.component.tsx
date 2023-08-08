@@ -21,7 +21,7 @@ export const Input = ({
                 id={htmlFor}
                 name={htmlFor}
                 type={type}
-                className="border mt-2 rounded w-full text-gray border-midGray px-2 outline-primaryColor outline-1"
+                className="border mt-2 py-0.5 rounded w-full bg-bgColor text-gray border-midGray px-2 outline-primaryColor outline-1"
             ></input>
         </label>
     );
@@ -33,7 +33,7 @@ export const TextArea = ({ htmlFor, labelValue }: inputProps): JSX.Element => {
             <span className="text-black text-sm block">{labelValue} *</span>
             <textarea
                 required={true}
-                className="border mt-2 rounded w-full text-gray border-midGray px-2 outline-primaryColor outline-1"
+                className="border mt-2 rounded w-full bg-bgColor text-gray border-midGray px-2 outline-primaryColor outline-1"
                 rows={5}
             ></textarea>
         </label>

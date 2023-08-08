@@ -10,7 +10,7 @@ const HeaderComponent = () => {
         <section id="header" className="mt-20 lg:mt-0 lg:h-screen">
             <div className="h-full flex justify-center flex-col">
                 <div className="lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-center 2xl:max-w-screen-2xl">
-                    <div className="flex flex-col text-black gap-8 xl:gap-12 2xl:gap-14">
+                    <div className="flex flex-col text-textColor gap-8 xl:gap-12 2xl:gap-14">
                         <div>
                             <p className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
                                 {"Hello, I'm"}
@@ -21,7 +21,7 @@ const HeaderComponent = () => {
                             <p className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl inline">
                                 {"and I'm a "}
                             </p>
-                            <p className="inline text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl border-b-2 border-accentColor font-bold">
+                            <p className="inline text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl border-b-2 border-secondaryColor font-bold">
                                 Software Engineer.
                             </p>
                         </div>
@@ -30,7 +30,7 @@ const HeaderComponent = () => {
                                 "artificial intelligence and robotics. I have over a year of professional work experience. Besides programming, I also enjoy to listen to music, play video games, read and to work out."}
                         </div>
                         <Link href="/#contact" passHref>
-                            <div className="rounded-md cursor-pointer bg-accentColor w-48 lg:w-64 py-2 text-center hover:bg-accentColorShade transition duration-300 ease-in-out shadow shadow-gray text-black">
+                            <div className="rounded-md cursor-pointer bg-accentColor w-48 lg:w-64 py-2 text-center hover:op transition duration-300 hover:bg-accentColorShade ease-in-out shadow shadow-gray">
                                 CONTACT ME
                             </div>
                         </Link>
