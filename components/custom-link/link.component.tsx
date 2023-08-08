@@ -1,11 +1,15 @@
 interface props {
     content: string,
-    onClick: React.MouseEventHandler<HTMLElement>
+    onClick: React.MouseEventHandler<HTMLElement>,
+    target: string,
+    href: string
 }
 
 const CustomLink = ({
     content,
-    onClick
+    onClick,
+    target = "_self",
+    href = ""
 }: props) => {
     const scrollTop = () => {
         window.scrollTo({
@@ -22,6 +26,8 @@ const CustomLink = ({
                 }
                 onClick(event);
             }}
+            target={target}
+            href={href}
         >{content}</a>
     )
 }

@@ -88,6 +88,7 @@ const NavbarComponent = () => {
                 <Link href="/#contact" passHref>
                     <CustomLink content="Contact" onClick={onClick} />
                 </Link>
+                <CustomLink content="Blog" onClick={onClick} target="_blank" href="https://no3lcodes.hashnode.dev/" />
             </div>
         </nav>
     );
